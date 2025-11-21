@@ -1,36 +1,26 @@
 [
   {
-    "path": "posts/2025-11-21-example2/",
-    "title": "example2",
+    "path": "posts/2025-11-21-example/",
+    "title": "Test post",
     "description": "A short description of the post.",
-    "author": [
-      {
-        "name": "Arthur Hughes",
-        "url": {}
-      }
-    ],
-    "date": "2025-11-22",
+    "author": [],
+    "date": "2025-11-21",
     "categories": [],
-    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "contents": "\nTest text\n\n\n\n",
     "preview": {},
-    "last_modified": "2025-11-21T13:37:37+01:00",
+    "last_modified": "2025-11-21T15:58:12+01:00",
     "input_file": {}
   },
   {
-    "path": "posts/2025-11-21-example/",
-    "title": "example",
+    "path": "posts/2025-11-21-example2/",
+    "title": "Test post",
     "description": "A short description of the post.",
-    "author": [
-      {
-        "name": "Arthur Hughes",
-        "url": {}
-      }
-    ],
+    "author": [],
     "date": "2025-11-21",
     "categories": [],
-    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "contents": "\nTest text\n\n\n\n",
     "preview": {},
-    "last_modified": "2025-11-21T13:37:33+01:00",
+    "last_modified": "2025-11-21T15:51:36+01:00",
     "input_file": {}
   }
 ]

@@ -1,6 +1,6 @@
 ---
 title: "Arthur Hughes"
-image: "portrait.jpeg"
+image: "images/portrait.jpeg"
 site: distill::distill_website
 links:
   - label: Google Scholar

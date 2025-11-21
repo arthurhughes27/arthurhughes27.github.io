@@ -1,4 +1,11 @@
 ---
-title: "Blog"  # any name you want here
-listing: posts # do this exactly
+title: ""  
+listing: posts 
 ---
+
+
+<div class="blog-intro">
+
+Here, I write about interesting areas of biostatistics in a casual tone. This is mainly an exercise for myself, although I would be glad if others learned something interesting here too!
+
+</div>

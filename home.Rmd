@@ -1,6 +1,6 @@
 ---
 title: "Arthur Hughes"
-image: "portrait.jpeg"
+image: "images/portrait.jpeg"
 links:
   - label: Google Scholar
     url: "https://scholar.google.com/citations?user=PSWWvJQAAAAJ&hl=en"
