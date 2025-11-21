@@ -10,17 +10,5 @@
     "preview": {},
     "last_modified": "2025-11-21T15:58:12+01:00",
     "input_file": {}
-  },
-  {
-    "path": "posts/2025-11-21-example2/",
-    "title": "Test post",
-    "description": "A short description of the post.",
-    "author": [],
-    "date": "2025-11-21",
-    "categories": [],
-    "contents": "\nTest text\n\n\n\n",
-    "preview": {},
-    "last_modified": "2025-11-21T15:51:36+01:00",
-    "input_file": {}
   }
 ]

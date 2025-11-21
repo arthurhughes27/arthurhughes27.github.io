@@ -19,4 +19,3 @@ navbar:
       href: blog.html
 theme: postcards.css
 output: distill::distill_article
-base_url: https://arthurhughes27.github.io/arthurhughes/index.html
