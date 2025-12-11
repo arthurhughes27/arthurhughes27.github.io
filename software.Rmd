@@ -1,0 +1,23 @@
+---
+title: "Software"
+output:
+  postcards::solana
+---
+
+
+<div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 20px;">
+
+  <!-- Package hex icon -->
+  <img src="images/hex_SurrogateRank.png" 
+       alt="SurrogateRank hex sticker" 
+       style="width:200px; height:auto;" />
+
+  <!-- Title and description -->
+  **SurrogateRank**  
+  [This R package](https://cran.r-project.org/web/packages/SurrogateRank/index.html) implements nonparametric rank-based methods for the identification and evaluation of surrogate markers in a small sample setting. A tutorial [can be found here](https://htmlpreview.github.io/?https://github.com/laylaparast/SurrogateRank/blob/main/SurrogateRank_tutorial.html).
+
+
+</div>
+
+
+

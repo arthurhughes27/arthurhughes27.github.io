@@ -10,16 +10,6 @@ output:
   2025
 </h1>
 
-**Title : Evaluation of Gene Expression as Trial-Level Surrogate Markers of Vaccination Across Multiple Settings** 
-
-**Description:** Proposition for a 6 month internship for a master's student, co-supervised by myself and Boris Hejblum. The subject of the internship is the evaluation of trial-level surrogate markers of the vaccine response using our recently developed approach, applied over different settings (e.g. clinical trials of the same vaccine). 
-
-<p>
-  <a href="internships/Internship_proposal_25_26_TLS.pdf" target="_blank" rel="noopener noreferrer">View internship offer</a>
-</p>
-
-<br><br>
-
 **Title : Evaluation of Approaches for Identifying High-Dimensional Individual-Level Surrogate Markers Applied to Vaccinology** 
 
 **Description:** Proposition for a 6 month internship for a master's student, co-supervised by myself and Boris Hejblum. The subject of the internship is the comparison of methods for identifying individual-level surrogate markers of the vaccine response. 
@@ -34,6 +24,20 @@ output:
     margin:1.5rem 0;">
 
 ## Past Offers
+
+<h1 style="font-size:1.5rem; font-weight:700; margin-bottom:1rem;">
+  2025
+</h1>
+
+**Title : Evaluation of Gene Expression as Trial-Level Surrogate Markers of Vaccination Across Multiple Settings** 
+
+**Description:** Proposition for a 6 month internship for a master's student, co-supervised by myself and Boris Hejblum. The subject of the internship is the evaluation of trial-level surrogate markers of the vaccine response using our recently developed approach, using meta-analysis tools to evaluate the generalisability of signatures across multiple clinical trials. 
+
+<p>
+  <a href="internships/Internship_proposal_25_26_TLS.pdf" target="_blank" rel="noopener noreferrer">View internship offer</a>
+</p>
+
+<br><br>
 
 <h1 style="font-size:1.5rem; font-weight:700; margin-bottom:4rem;">
   2024

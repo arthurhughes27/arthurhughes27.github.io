@@ -11,6 +11,8 @@ navbar:
       href: teaching.html
     - text: "Publications"
       href: publications.html
+    - text: "Software"
+      href: software.html
     - text: "Communications"
       href: communications.html
     - text: "Jobs"
