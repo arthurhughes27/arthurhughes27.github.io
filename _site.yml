@@ -17,7 +17,7 @@ navbar:
       href: communications.html
     - text: "Jobs"
       href: jobs.html
-    - text: "Blog"
-      href: blog.html
+    # - text: "Blog"
+    #   href: blog.html
 theme: postcards.css
 output: distill::distill_article
