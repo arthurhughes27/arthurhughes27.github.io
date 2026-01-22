@@ -17,6 +17,15 @@ output:
 
 I am a PhD student in biostatistics at the University of Bordeaux, France. I work on new methodology for analysing high-dimensional molecular data in the context of vaccine experiments. My research interests include causal inference, surrogate markers, non-parametric statistics, as well as data visualisation and communication. 
 
+<p>
+  <a href="internships/Curriculum_Vitae.pdf"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="font-size: 1.3em; font-weight: bold;">
+    Curriculum Vitae
+  </a>
+</p>
+
 ## Education
 
 **University of Bordeaux, France** 

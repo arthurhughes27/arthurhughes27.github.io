@@ -2,7 +2,7 @@
    postcards-solana-custom.css
    Solana-like postcards theme for Distill
    All text forced to Roboto Mono
-   Header background color unified to #a63a50
+   Header background color unified to #002928
    ============================================================ */
 
 /* --- External font --- */
@@ -46,8 +46,8 @@ body.postcards-site .distill-site-header .navbar,
 .site-nav,
 .navbar,
 header.distill-site-header {
-  background: #a63a50 !important;
-  background-color: #a63a50 !important;
+  background: #002928 !important;
+  background-color: #002928 !important;
   color: #ffffff !important;
   width: 100% !important;
   box-shadow: none !important;
@@ -59,8 +59,8 @@ body.postcards-site .distill-site-header::before,
 body.postcards-site .distill-site-header::after,
 .site-nav-wrapper::before,
 .site-nav-wrapper::after {
-  background: #a63a50 !important;
-  background-color: #a63a50 !important;
+  background: #002928 !important;
+  background-color: #002928 !important;
 }
 
 /* Title text (top-left) - force white and Roboto Mono */
