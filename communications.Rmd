@@ -45,6 +45,18 @@ Oral Presentation : *Evaluating High-dimensional Surrogate Markers of Vaccine Re
     margin:1.5rem 0;">
     
     
+**Biostatistics Seminar, University of Bordeaux** | Bordeaux, France, March 2026
+
+Oral Presentation : *RISE-Meta: Meta-analytic Evaluation of High-Dimensional Trial-Level Surrogates Applied to Vaccinology*
+
+<p>
+  <a href="slides/communications/oral_communication_Bordeaux_2026.pdf" target="_blank" rel="noopener noreferrer">Slides</a>
+</p>
+
+<hr style="border:0; height:3px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.22), rgba(0,0,0,0.06));
+    margin:1.5rem 0;">
+    
 **Conférence Francophone d'Epidémiologie Clinique (EPICLIN) Conference** | Bordeaux, France, May 2025
 
 Contributed poster presentation : *Rank-Based Identification of High-Dimensional Surrogate
