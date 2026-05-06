@@ -6,28 +6,32 @@ output:
  
 ## Current Offers
 
-<h1 style="font-size:1.5rem; font-weight:700; margin-bottom:1rem;">
-  2025
+I have no current internship offers. 
+
+<h1 style="font-size:1.5rem; font-weight:700; margin-bottom:3rem;">
 </h1>
-
-**Title : Evaluation of Approaches for Identifying High-Dimensional Individual-Level Surrogate Markers Applied to Vaccinology** 
-
-**Description:** Proposition for a 6 month internship for a master's student, co-supervised by myself and Boris Hejblum. The subject of the internship is the comparison of methods for identifying individual-level surrogate markers of the vaccine response. 
-
-<p>
-  <a href="internships/Internship_proposal_25_26_ILS.pdf" target="_blank" rel="noopener noreferrer">View internship offer</a>
-</p>
-
-
-<hr style="border:0; height:3px;
-    background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.22), rgba(0,0,0,0.06));
-    margin:1.5rem 0;">
 
 ## Past Offers
 
 <h1 style="font-size:1.5rem; font-weight:700; margin-bottom:1rem;">
   2025
 </h1>
+
+**Title : Evaluation of Approaches for Identifying High-Dimensional Individual-Level Surrogate Markers Applied to Vaccinology** 
+
+**Description:** Proposition for a 6 month internship for a master's student, co-supervised by myself and Boris Hejblum. The subject of the internship is the comparison of methods for identifying individual-level surrogate markers of the vaccine response. The project was completed by Master student Roaya Jannatipour. 
+
+<p>
+  <a href="internships/Internship_proposal_25_26_ILS.pdf" target="_blank" rel="noopener noreferrer">View internship offer</a>
+</p>
+
+<h1 style="font-size:1.5rem; font-weight:700; margin-bottom:3rem;">
+</h1>
+
+
+<hr style="border:0; height:3px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.22), rgba(0,0,0,0.06));
+    margin:1.5rem 0;">
 
 **Title : Evaluation of Gene Expression as Trial-Level Surrogate Markers of Vaccination Across Multiple Settings** 
 
@@ -39,7 +43,7 @@ output:
 
 <br><br>
 
-<h1 style="font-size:1.5rem; font-weight:700; margin-bottom:4rem;">
+<h1 style="font-size:1.5rem; font-weight:700; margin-bottom:2rem;">
   2024
 </h1>
 
