@@ -4,6 +4,14 @@ output:
   postcards::solana
 ---
 
+**International Biometric Conference** | Seoul, July 2025
+
+Contributed oral presentation : *Evaluation of High-Dimensional Surrogate Markers with Applications to Vaccinology*
+
+<hr style="border:0; height:3px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.22), rgba(0,0,0,0.06));
+    margin:1.5rem 0;">
+
 **International Society for Clinical Biostatistics Conference** | Thessaloniki, Greece, July 2024
 
 Contributed oral presentation : *A variance-component score test for the comparison of

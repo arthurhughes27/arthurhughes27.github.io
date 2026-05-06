@@ -3,6 +3,14 @@ title: "Publications"
 output:
   postcards::solana
 ---
+**2026**
+
+**Meta-Analysis of High-Dimensional Surrogate Markers**  
+Hughes, A., Thiébaut, R., Parast, L., and Hejblum, B.P.  
+*arXiv preprint*, 2026.  
+[arXiv:2605.03819](https://doi.org/10.48550/arXiv.2605.03819)
+
+
 **2025**
 
 **RISE: Two-Stage Rank-Based Identification of High-Dimensional Surrogate Markers Applied to Vaccinology**  
