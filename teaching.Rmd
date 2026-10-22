@@ -22,7 +22,7 @@ source("includes/helpers.R")
 - Differential gene expression analysis
 
 ::: {.note}
-**Note:** Completing this course requires private data, which is transferred securely to the students in my classes.
+**Note:** Completing this course requires datasets which are transferred securely to the students in my classes.
 :::
 
 ```{r, echo=FALSE, results='asis'}
@@ -39,13 +39,13 @@ practical("Practical work (solutions)", "PHDS_omics_GMA_2026_solutions")
 
 **Description:** In this 6-hour course, I give an overview of supervised learning in the high-dimensional setting, focusing on regression tasks. I mainly discuss:
 
-- Cross-validation for model evaluation and hyperparameter tuning
+- Cross-validation for model evaluation, hyperparameter tuning
 - Regularised methods (ridge, lasso, and elastic net regression)
-- Latent variable approaches (principal component regression and (sparse) partial least squares)
+- Latent variable approaches (principal component regression and partial least squares)
 - Model interpretability
 
 ::: {.note}
-**Note:** Completing this course requires private data, which is transferred securely to the students in my classes.
+**Note:** Completing this course requires datasets which are transferred securely to the students in my classes.
 :::
 
 ```{r, echo=FALSE, results='asis'}
@@ -67,7 +67,7 @@ practical("Practical work (solutions)", "PHDS_omics_supervisedlearning_2026_solu
 - False discovery rate and its control (Benjamini-Hochberg, Benjamini-Yekutieli)
 
 ::: {.note}
-**Note:** Completing this course requires private data, which is transferred securely to the students in my classes.
+**Note:** Completing this course requires datasets which are transferred securely to the students in my classes.
 :::
 
 ```{r, echo=FALSE, results='asis'}
@@ -86,8 +86,8 @@ practical("Practical work (solutions)", "PHDS_omics_multiplicity_v2_2026_solutio
 
 - Measures of association
 - Study design
-- Diagnostics (sensitivity, specificity, PPV, NPV)
-- Causality, types of bias, and directed acyclic graphs
+- Test diagnostics (sensitivity, specificity, PPV, NPV)
+- Causality, bias, and directed acyclic graphs
 
 ```{r, echo=FALSE, results='asis'}
 slides("slides/teaching/Core Principles of Epidemiology - Quiz (2025).pdf", "Quiz Slides")
