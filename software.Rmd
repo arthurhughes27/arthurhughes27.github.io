@@ -14,6 +14,16 @@ output:
 :::
 ::::
 
+:::: {.software-item}
+<img src="images/predictomics_hex.png" alt="predictomics hex sticker">
+
+::: {.software-text}
+### predictomics
+
+R package providing a standardised interface for prediction tasks in the context of omics data. Not yet available on CRAN.
+:::
+::::
+
 ```{r site-includes, echo=FALSE, results='asis'}
 source("includes/site_includes.R"); site_includes()
 ```

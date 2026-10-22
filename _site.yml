@@ -3,6 +3,9 @@ title: "Arthur Hughes"
 description: |
   Personal website of Arthur Hughes, PhD student in biostatistics at the University of Bordeaux.
 output_dir: "docs"
+search: false
+# build helpers that should not be copied into docs/
+exclude: ["scripts", "includes"]
 navbar:
   right:
     - text: "Home"
