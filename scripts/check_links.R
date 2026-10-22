@@ -44,7 +44,10 @@ for (f in files) {
   base <- dirname(f)
   for (target in link_targets(text, grepl("\\.html$", f))) {
     if (!nzchar(target)) next
-    if (!exists_exact(file.path(base, target))) missing <- c(missing, sprintf("%s -> %s", f, target))
+    # a leading "/" means "from the site root": docs/ for built pages, the repository root for sources
+    root <- if (grepl("\\.html$", f)) "docs" else "."
+    path <- if (startsWith(target, "/")) file.path(root, sub("^/+", "", target)) else file.path(base, target)
+    if (!exists_exact(path)) missing <- c(missing, sprintf("%s -> %s", f, target))
   }
 }
 
