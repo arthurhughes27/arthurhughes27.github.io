@@ -11,7 +11,7 @@ output:
 
 [Seoul, South Korea, July 2026]{.meta}
 
-Contributed oral presentation : *Evaluation of High-Dimensional Surrogate Markers with Applications to Vaccinology*
+*Evaluation of High-Dimensional Surrogate Markers with Applications to Vaccinology*
 
 [Slides](slides/communications/oral_communication_IBC_Korea_2026.pdf){.pill target="_blank" rel="noopener noreferrer"}
 ::::
@@ -21,7 +21,7 @@ Contributed oral presentation : *Evaluation of High-Dimensional Surrogate Marker
 
 [Bordeaux, France, March 2026]{.meta}
 
-Oral Presentation : *RISE-Meta: Meta-analytic Evaluation of High-Dimensional Trial-Level Surrogates Applied to Vaccinology*
+*RISE-Meta: Meta-analytic Evaluation of High-Dimensional Trial-Level Surrogates Applied to Vaccinology*
 
 [Slides](slides/communications/oral_communication_Bordeaux_2026.pdf){.pill target="_blank" rel="noopener noreferrer"}
 ::::
@@ -31,7 +31,7 @@ Oral Presentation : *RISE-Meta: Meta-analytic Evaluation of High-Dimensional Tri
 
 [Marseille, France, June 2025]{.meta}
 
-Contributed oral presentation : *Rank-Based Identification of High-Dimensional Surrogate Markers : Application to Vaccinology*
+*Rank-Based Identification of High-Dimensional Surrogate Markers : Application to Vaccinology*
 
 [Slides](slides/communications/oral_communication_JDS_2024.pdf){.pill target="_blank" rel="noopener noreferrer"}
 ::::
@@ -41,7 +41,7 @@ Contributed oral presentation : *Rank-Based Identification of High-Dimensional S
 
 [Thessaloniki, Greece, July 2024]{.meta}
 
-Contributed oral presentation : *A variance-component score test for the comparison of gene-set transcriptomic profiles of vaccines*
+*A variance-component score test for the comparison of gene-set transcriptomic profiles of vaccines*
 
 [Slides](slides/communications/oral_communication_ISCB_2024.pdf){.pill target="_blank" rel="noopener noreferrer"}
 ::::
@@ -51,7 +51,7 @@ Contributed oral presentation : *A variance-component score test for the compari
 
 [Austin, USA, June 2024]{.meta}
 
-Oral Presentation : *Evaluating High-dimensional Surrogate Markers of Vaccine Response through Causal Mediation Analysis*
+*Evaluating High-dimensional Surrogate Markers of Vaccine Response through Causal Mediation Analysis*
 
 [Slides](slides/communications/oral_communication_Austin_2024.pdf){.pill target="_blank" rel="noopener noreferrer"}
 ::::
@@ -63,7 +63,7 @@ Oral Presentation : *Evaluating High-dimensional Surrogate Markers of Vaccine Re
 
 [Bordeaux, France, May 2025]{.meta}
 
-Contributed poster presentation : *Rank-Based Identification of High-Dimensional Surrogate Markers : Application to Vaccinology*
+*Rank-Based Identification of High-Dimensional Surrogate Markers : Application to Vaccinology*
 
 [Poster](slides/communications/poster_commnuication_EPICLIN_2025.pdf){.pill target="_blank" rel="noopener noreferrer"}
 ::::
@@ -73,7 +73,7 @@ Contributed poster presentation : *Rank-Based Identification of High-Dimensional
 
 [Paris, France, January 2024]{.meta}
 
-Contributed poster presentation : *A test for the comparison of gene-set transcriptomic profiles of vaccines*
+*A test for the comparison of gene-set transcriptomic profiles of vaccines*
 
 [Poster](slides/communications/poster_communication_SMPGD_2024.pdf){.pill target="_blank" rel="noopener noreferrer"}
 ::::
