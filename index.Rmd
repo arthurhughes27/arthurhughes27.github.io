@@ -59,6 +59,6 @@ Email : [arthur.hughes@u-bordeaux.fr](mailto:arthur.hughes@u-bordeaux.fr)
 
 ORCID : [0009-0001-5841-2580](https://orcid.org/0009-0001-5841-2580)
 
-```{r theme-script, echo=FALSE, results='asis'}
-cat(readLines("includes/theme.html"), sep = "\n")
+```{r site-includes, echo=FALSE, results='asis'}
+source("includes/site_includes.R"); site_includes()
 ```

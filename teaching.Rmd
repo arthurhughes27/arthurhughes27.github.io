@@ -93,6 +93,6 @@ output:
 :::
 ::::
 
-```{r theme-script, echo=FALSE, results='asis'}
-cat(readLines("includes/theme.html"), sep = "\n")
+```{r site-includes, echo=FALSE, results='asis'}
+source("includes/site_includes.R"); site_includes()
 ```
