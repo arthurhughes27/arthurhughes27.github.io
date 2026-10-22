@@ -27,9 +27,11 @@
     }
     btn.addEventListener('click', function () {
       var next = isDark() ? 'light' : 'dark';
+      root.classList.add('theme-fade');
       root.setAttribute('data-theme', next);
       try { localStorage.setItem('theme', next); } catch (e) {}
       paint();
+      setTimeout(function () { root.classList.remove('theme-fade'); }, 400);
     });
     paint();
     nav.insertBefore(btn, nav.querySelector('.nav-toggle'));
