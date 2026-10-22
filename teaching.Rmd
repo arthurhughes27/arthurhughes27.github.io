@@ -4,6 +4,10 @@ output:
   postcards::solana
 ---
 
+```{r setup, include=FALSE}
+source("includes/helpers.R")
+```
+
 ## MSc Public Health Data Science – ISPED, University of Bordeaux
 
 :::: {.entry}
@@ -17,15 +21,11 @@ output:
 - Exploratory analyses : principal component analysis, hierarchical clustering algorithms
 - Differential gene expression analysis
 
-::: {.resource}
-[Slides]{.resource-label} [Download (PDF)](slides/teaching/PHDS_omics_GMA_slides_2026.pdf){.pill download=""} [Open in new tab](slides/teaching/PHDS_omics_GMA_slides_2026.pdf){.pill target="_blank" rel="noopener noreferrer"}
-:::
-::: {.resource}
-[Practical work (questions)]{.resource-label} [Download (.Rmd)](practicals/PHDS_omics_GMA_2026_questions.Rmd){.pill download=""} [Open in new tab (.html)](practicals/PHDS_omics_GMA_2026_questions.html){.pill target="_blank" rel="noopener noreferrer"}
-:::
-::: {.resource}
-[Practical work (solutions)]{.resource-label} [Download (.Rmd)](practicals/PHDS_omics_GMA_2026_solutions.Rmd){.pill download=""} [Open in new tab (.html)](practicals/PHDS_omics_GMA_2026_solutions.html){.pill target="_blank" rel="noopener noreferrer"}
-:::
+```{r, echo=FALSE, results='asis'}
+slides("slides/teaching/PHDS_omics_GMA_slides_2026.pdf")
+practical("Practical work (questions)", "PHDS_omics_GMA_2026_questions")
+practical("Practical work (solutions)", "PHDS_omics_GMA_2026_solutions")
+```
 ::::
 
 :::: {.entry}
@@ -40,15 +40,11 @@ output:
 - Latent variable approaches (prinipal component regression, (sparse) partial least squares)
 - Model interpretability
 
-::: {.resource}
-[Slides]{.resource-label} [Download (PDF)](slides/teaching/PHDS_omics_supervisedLearning_slides_2026.pdf){.pill download=""} [Open in new tab](slides/teaching/PHDS_omics_supervisedLearning_slides_2026.pdf){.pill target="_blank" rel="noopener noreferrer"}
-:::
-::: {.resource}
-[Practical work (questions)]{.resource-label} [Download (.Rmd)](practicals/PHDS_omics_supervisedlearning_2026_questions.Rmd){.pill download=""} [Open in new tab (.html)](practicals/PHDS_omics_supervisedlearning_2026_questions.html){.pill target="_blank" rel="noopener noreferrer"}
-:::
-::: {.resource}
-[Practical work (solutions)]{.resource-label} [Download (.Rmd)](practicals/PHDS_omics_supervisedlearning_2026_solutions.Rmd){.pill download=""} [Open in new tab (.html)](practicals/PHDS_omics_supervisedlearning_2026_solutions.html){.pill target="_blank" rel="noopener noreferrer"}
-:::
+```{r, echo=FALSE, results='asis'}
+slides("slides/teaching/PHDS_omics_supervisedLearning_slides_2026.pdf")
+practical("Practical work (questions)", "PHDS_omics_supervisedlearning_2026_questions")
+practical("Practical work (solutions)", "PHDS_omics_supervisedlearning_2026_solutions")
+```
 ::::
 
 :::: {.entry}
@@ -62,15 +58,11 @@ output:
 - Family-wise error rate and its control (Bonferroni, Holm)
 - False discovery rate and its control (Benjamini-Hochberg, Benjamini-Yekutieli)
 
-::: {.resource}
-[Slides]{.resource-label} [Download (PDF)](slides/teaching/PHDS_omics_testMultiplicity_slides_2026.pdf){.pill download=""} [Open in new tab](slides/teaching/PHDS_omics_testMultiplicity_slides_2026.pdf){.pill target="_blank" rel="noopener noreferrer"}
-:::
-::: {.resource}
-[Practical work (questions)]{.resource-label} [Download (.Rmd)](practicals/PHDS_omics_multiplicity_2026_questions.Rmd){.pill download=""} [Open in new tab (.html)](practicals/PHDS_omics_multiplicity_2026_questions.html){.pill target="_blank" rel="noopener noreferrer"}
-:::
-::: {.resource}
-[Practical work (solutions)]{.resource-label} [Download (.Rmd)](practicals/PHDS_omics_multiplicity_v2_2026_solutions.Rmd){.pill download=""} [Open in new tab (.html)](practicals/PHDS_omics_multiplicity_v2_2026_solutions.html){.pill target="_blank" rel="noopener noreferrer"}
-:::
+```{r, echo=FALSE, results='asis'}
+slides("slides/teaching/PHDS_omics_testMultiplicity_slides_2026.pdf")
+practical("Practical work (questions)", "PHDS_omics_multiplicity_2026_questions")
+practical("Practical work (solutions)", "PHDS_omics_multiplicity_v2_2026_solutions")
+```
 ::::
 
 :::: {.entry}
@@ -85,12 +77,10 @@ output:
 - Diagnostics (sensitivity, specificity, PPV, NPV)
 - Causality, types of bias, and directed acylic graphs
 
-::: {.resource}
-[Quiz Slides]{.resource-label} [Download (PDF)](slides/teaching/Core%20Principles%20of%20Epidemiology%20-%20Quiz%20%282025%29.pdf){.pill download=""} [Open in new tab](slides/teaching/Core%20Principles%20of%20Epidemiology%20-%20Quiz%20%282025%29.pdf){.pill target="_blank" rel="noopener noreferrer"}
-:::
-::: {.resource}
-[Lecture Slides]{.resource-label} [Download (PDF)](slides/teaching/Core%20Principles%20of%20Epidemiology%20-%20DAGs%20%282025%29.pdf){.pill download=""} [Open in new tab](slides/teaching/Core%20Principles%20of%20Epidemiology%20-%20DAGs%20%282025%29.pdf){.pill target="_blank" rel="noopener noreferrer"}
-:::
+```{r, echo=FALSE, results='asis'}
+slides("slides/teaching/Core Principles of Epidemiology - Quiz (2025).pdf", "Quiz Slides")
+slides("slides/teaching/Core Principles of Epidemiology - DAGs (2025).pdf", "Lecture Slides")
+```
 ::::
 
 ```{r site-includes, echo=FALSE, results='asis'}
