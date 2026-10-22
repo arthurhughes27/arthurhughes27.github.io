@@ -2,8 +2,6 @@ name: "."
 title: "Arthur Hughes"
 description: |
   Personal website of Arthur Hughes, PhD student in biostatistics at the University of Bordeaux.
-includes:
-  in_header: includes/head.html
 output_dir: "docs"
 navbar:
   right:
@@ -22,4 +20,7 @@ navbar:
     # - text: "Blog"
     #   href: blog.html
 theme: postcards.css
-output: distill::distill_article
+output:
+  distill::distill_article:
+    includes:
+      in_header: includes/head.html

@@ -1,0 +1,39 @@
+<script>
+(function () {
+  var root = document.documentElement;
+  try { var saved = localStorage.getItem('theme'); if (saved) { root.setAttribute('data-theme', saved); } } catch (e) {}
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    return t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function init() {
+    if (window.__themeInit) { return; }
+    window.__themeInit = true;
+    var links = document.querySelectorAll('.distill-site-header .nav-right a');
+    var here = location.pathname.split('/').pop() || 'index.html';
+    for (var i = 0; i < links.length; i++) {
+      if (links[i].getAttribute('href') === here) { links[i].setAttribute('aria-current', 'page'); }
+    }
+    var nav = document.querySelector('.distill-site-header .nav-right');
+    if (!nav) { return; }
+    var btn = document.createElement('a');
+    btn.href = 'javascript:void(0);';
+    btn.className = 'theme-toggle';
+    function paint() {
+      btn.textContent = isDark() ? '☀' : '☾';
+      var label = isDark() ? 'Switch to light theme' : 'Switch to dark theme';
+      btn.setAttribute('aria-label', label);
+      btn.setAttribute('title', label);
+    }
+    btn.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      paint();
+    });
+    paint();
+    nav.insertBefore(btn, nav.querySelector('.nav-toggle'));
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
+})();
+</script>
