@@ -1,12 +1,14 @@
 name: "."
 title: "Arthur Hughes"
 description: |
-  iyo-distill
+  Personal website of Arthur Hughes, PhD student in biostatistics at the University of Bordeaux.
+includes:
+  in_header: includes/head.html
 output_dir: "docs"
 navbar:
   right:
     - text: "Home"
-      href: home.html
+      href: index.html
     - text: "Teaching"
       href: teaching.html
     - text: "Publications"

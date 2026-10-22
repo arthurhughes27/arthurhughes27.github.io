@@ -6,16 +6,14 @@ output:
  
 ## Current Offers
 
-I have no current internship offers. 
+I have no current internship offers. Any new offers will appear here. If you are interested in working on similar topics, you are welcome to get in touch:
 
-<h1 style="font-size:1.5rem; font-weight:700; margin-bottom:3rem;">
-</h1>
+- Email : [arthur.hughes@u-bordeaux.fr](mailto:arthur.hughes@u-bordeaux.fr)
+- ORCID : [0009-0001-5841-2580](https://orcid.org/0009-0001-5841-2580)
 
 ## Past Offers
 
-<h1 style="font-size:1.5rem; font-weight:700; margin-bottom:1rem;">
-  2025
-</h1>
+### 2025
 
 **Title : Evaluation of Approaches for Identifying High-Dimensional Individual-Level Surrogate Markers Applied to Vaccinology** 
 
@@ -24,10 +22,6 @@ I have no current internship offers.
 <p>
   <a href="internships/Internship_proposal_25_26_ILS.pdf" target="_blank" rel="noopener noreferrer">View internship offer</a>
 </p>
-
-<h1 style="font-size:1.5rem; font-weight:700; margin-bottom:3rem;">
-</h1>
-
 
 <hr style="border:0; height:3px;
     background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.22), rgba(0,0,0,0.06));
@@ -41,11 +35,7 @@ I have no current internship offers.
   <a href="internships/Internship_proposal_25_26_TLS.pdf" target="_blank" rel="noopener noreferrer">View internship offer</a>
 </p>
 
-<br><br>
-
-<h1 style="font-size:1.5rem; font-weight:700; margin-bottom:2rem;">
-  2024
-</h1>
+### 2024
 
 **Title : Evaluating High-Dimensional Surrogate Markers of the Yellow Fever Vaccine Response** 
 
