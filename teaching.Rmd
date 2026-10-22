@@ -4,145 +4,91 @@ output:
   postcards::solana
 ---
 
-<h1 style="font-size:1.5rem; font-weight:700; margin-bottom:1rem;">
-  MSc Public Health Data Science – ISPED, University of Bordeaux
-</h1>
+## MSc Public Health Data Science – ISPED, University of Bordeaux
 
-<hr style="border:0; height:3px;
-    background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.22), rgba(0,0,0,0.06));
-    margin:1.5rem 0;">
+:::: {.entry}
+### Genomics Data : Generation, Management, and Analysis
 
-<h1 style="font-size:1.3rem; font-weight:700; margin-bottom:0.25rem;">
-Genomics Data : Generation, Management, and Analysis (2024-)
-</h1>
+[2024 – present]{.meta}
 
-**Description: **
-In this 6 hour long course, I give an introduction to genomics data, focusing on the generation and analysis of transcriptomic data. In particular, I discuss
+**Description:** In this 6 hour long course, I give an introduction to genomics data, focusing on the generation and analysis of transcriptomic data. In particular, I discuss
 
 - Quality control, filtration, normalisation, and batch effects
 - Exploratory analyses : principal component analysis, hierarchical clustering algorithms
 - Differential gene expression analysis
 
-**Slides**
-<p>
-  <a href="slides/teaching/PHDS_omics_GMA_slides_2026.pdf" download>Download (PDF)</a> |
-  <a href="slides/teaching/PHDS_omics_GMA_slides_2026.pdf" target="_blank" rel="noopener noreferrer">Open in new tab</a>
-</p>
+::: {.resource}
+[Slides]{.resource-label} [Download (PDF)](slides/teaching/PHDS_omics_GMA_slides_2026.pdf){.pill download=""} [Open in new tab](slides/teaching/PHDS_omics_GMA_slides_2026.pdf){.pill target="_blank" rel="noopener noreferrer"}
+:::
+::: {.resource}
+[Practical work (questions)]{.resource-label} [Download (.Rmd)](practicals/PHDS_omics_GMA_2026_questions.Rmd){.pill download=""} [Open in new tab (.html)](practicals/PHDS_omics_GMA_2026_questions.html){.pill target="_blank" rel="noopener noreferrer"}
+:::
+::: {.resource}
+[Practical work (solutions)]{.resource-label} [Download (.Rmd)](practicals/PHDS_omics_GMA_2026_solutions.Rmd){.pill download=""} [Open in new tab (.html)](practicals/PHDS_omics_GMA_2026_solutions.html){.pill target="_blank" rel="noopener noreferrer"}
+:::
+::::
 
+:::: {.entry}
+### Genomics Data : Supervised Learning for High-Dimensional Data
 
-**Practical work (questions)**
-<p>
-  <a href="practicals/PHDS_omics_GMA_2026_questions.Rmd" download>Download (.Rmd)</a> |
-  <a href="practicals/PHDS_omics_GMA_2026_questions.html" target="_blank" rel="noopener noreferrer">Open in new tab (.html)</a>
-</p>
+[2024 – present]{.meta}
 
-**Practical work (solutions)**
-<p>
-  <a href="practicals/PHDS_omics_GMA_2026_solutions.Rmd" download>Download (.Rmd)</a> |
-  <a href="practicals/PHDS_omics_GMA_2026_solutions.html" target="_blank" rel="noopener noreferrer">Open in new tab (.html)</a>
-</p>
-
-<hr style="border:0; height:3px;
-    background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.22), rgba(0,0,0,0.06));
-    margin:1.5rem 0;">
-    
-    
-    
-    
-<h1 style="font-size:1.3rem; font-weight:700; margin-bottom:0.25rem;">
-Genomics Data : Supervised Learning for High-Dimensional Data (2024-)
-</h1>
-
-**Description: **
-In this 6 hour long course, I give an overview on supervised learning in the high-dimensional setting, focusing on regression tasks. I mainly discuss
+**Description:** In this 6 hour long course, I give an overview on supervised learning in the high-dimensional setting, focusing on regression tasks. I mainly discuss
 
 - Cross-validation for model evaluation and hyperparameter tuning
 - Regularised methods (ridge, lasso, and elastic net regression)
 - Latent variable approaches (prinipal component regression, (sparse) partial least squares)
 - Model interpretability
 
-**Slides**
-<p>
-  <a href="slides/teaching/PHDS_omics_supervisedLearning_slides_2026.pdf" download>Download (PDF)</a> |
-  <a href="slides/teaching/PHDS_omics_supervisedLearning_slides_2026.pdf" target="_blank" rel="noopener noreferrer">Open in new tab</a>
-</p>
+::: {.resource}
+[Slides]{.resource-label} [Download (PDF)](slides/teaching/PHDS_omics_supervisedLearning_slides_2026.pdf){.pill download=""} [Open in new tab](slides/teaching/PHDS_omics_supervisedLearning_slides_2026.pdf){.pill target="_blank" rel="noopener noreferrer"}
+:::
+::: {.resource}
+[Practical work (questions)]{.resource-label} [Download (.Rmd)](practicals/PHDS_omics_supervisedlearning_2026_questions.Rmd){.pill download=""} [Open in new tab (.html)](practicals/PHDS_omics_supervisedlearning_2026_questions.html){.pill target="_blank" rel="noopener noreferrer"}
+:::
+::: {.resource}
+[Practical work (solutions)]{.resource-label} [Download (.Rmd)](practicals/PHDS_omics_supervisedlearning_2026_solutions.Rmd){.pill download=""} [Open in new tab (.html)](practicals/PHDS_omics_supervisedlearning_2026_solutions.html){.pill target="_blank" rel="noopener noreferrer"}
+:::
+::::
 
+:::: {.entry}
+### Genomics Data : Test Multiplicity
 
-**Practical work (questions)**
-<p>
-  <a href="practicals/PHDS_omics_supervisedlearning_2026_questions.Rmd" download>Download (.Rmd)</a> |
-  <a href="practicals/PHDS_omics_supervisedlearning_2026_questions.html" target="_blank" rel="noopener noreferrer">Open in new tab (.html)</a>
-</p>
+[2024 – present]{.meta}
 
-**Practical work (solutions)**
-<p>
-  <a href="practicals/PHDS_omics_supervisedlearning_2026_solutions.Rmd" download>Download (.Rmd)</a> |
-  <a href="practicals/PHDS_omics_supervisedlearning_2026_solutions.html" target="_blank" rel="noopener noreferrer">Open in new tab (.html)</a>
-</p>
-
-
-<hr style="border:0; height:3px;
-    background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.22), rgba(0,0,0,0.06));
-    margin:1.5rem 0;">
-    
-    
-    
-    
-<h1 style="font-size:1.3rem; font-weight:700; margin-bottom:0.25rem;">
-Genomics Data : Test Multiplicity (2024-)
-</h1>
-
-**Description: **
-In this 3 hour long course, I provide an overview of the multiple testing problem in high-dimensional settings. In particular, I discuss
+**Description:** In this 3 hour long course, I provide an overview of the multiple testing problem in high-dimensional settings. In particular, I discuss
 
 - An introduction to frequentist hypothesis testing
 - Family-wise error rate and its control (Bonferroni, Holm)
 - False discovery rate and its control (Benjamini-Hochberg, Benjamini-Yekutieli)
 
-**Slides**
-<p>
-  <a href="slides/teaching/PHDS_omics_testMultiplicity_slides_2026.pdf" download>Download (PDF)</a> |
-  <a href="slides/teaching/PHDS_omics_testMultiplicity_slides_2026.pdf" target="_blank" rel="noopener noreferrer">Open in new tab</a>
-</p>
+::: {.resource}
+[Slides]{.resource-label} [Download (PDF)](slides/teaching/PHDS_omics_testMultiplicity_slides_2026.pdf){.pill download=""} [Open in new tab](slides/teaching/PHDS_omics_testMultiplicity_slides_2026.pdf){.pill target="_blank" rel="noopener noreferrer"}
+:::
+::: {.resource}
+[Practical work (questions)]{.resource-label} [Download (.Rmd)](practicals/PHDS_omics_multiplicity_2026_questions.Rmd){.pill download=""} [Open in new tab (.html)](practicals/PHDS_omics_multiplicity_2026_questions.html){.pill target="_blank" rel="noopener noreferrer"}
+:::
+::: {.resource}
+[Practical work (solutions)]{.resource-label} [Download (.Rmd)](practicals/PHDS_omics_multiplicity_v2_2026_solutions.Rmd){.pill download=""} [Open in new tab (.html)](practicals/PHDS_omics_multiplicity_v2_2026_solutions.html){.pill target="_blank" rel="noopener noreferrer"}
+:::
+::::
 
+:::: {.entry}
+### Core Principles of Epidemiology
 
-**Practical work (questions)**
-<p>
-  <a href="practicals/PHDS_omics_multiplicity_2026_questions.Rmd" download>Download (.Rmd)</a> |
-  <a href="practicals/PHDS_omics_multiplicity_2026_questions.html" target="_blank" rel="noopener noreferrer">Open in new tab (.html)</a>
-</p>
+[2024 – 2025]{.meta}
 
-**Practical work (solutions)**
-<p>
-  <a href="practicals/PHDS_omics_multiplicity_v2_2026_solutions.Rmd" download>Download (.Rmd)</a> |
-  <a href="practicals/PHDS_omics_multiplicity_v2_2026_solutions.html" target="_blank" rel="noopener noreferrer">Open in new tab (.html)</a>
-</p>
-    
-    
-<hr style="border:0; height:3px;
-    background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.22), rgba(0,0,0,0.06));
-    margin:1.5rem 0;">
-
-<h1 style="font-size:1.3rem; font-weight:700; margin-bottom:0.25rem;">
-Core Principles of Epidemiology (2024-2025)
-</h1>
-
-**Description: **
-In this 6 hour long course, I give an introduction to epidemiology, discussing
+**Description:** In this 6 hour long course, I give an introduction to epidemiology, discussing
 
 - Measures of association
 - Study design
 - Diagnostics (sensitivity, specificity, PPV, NPV)
 - Causality, types of bias, and directed acylic graphs
 
-**Quiz Slides**
-<p>
-  <a href="slides/teaching/Core Principles of Epidemiology - Quiz (2025).pdf" download>Download (PDF)</a> |
-  <a href="slides/teaching/Core Principles of Epidemiology - Quiz (2025).pdf" target="_blank" rel="noopener noreferrer">Open in new tab</a>
-</p>
-
-**Lecture Slides**
-<p>
-  <a href="slides/teaching/Core Principles of Epidemiology - DAGs (2025).pdf" download>Download (PDF)</a> |
-  <a href="slides/teaching/Core Principles of Epidemiology - DAGs (2025).pdf" target="_blank" rel="noopener noreferrer">Open in new tab</a>
-</p>
+::: {.resource}
+[Quiz Slides]{.resource-label} [Download (PDF)](slides/teaching/Core%20Principles%20of%20Epidemiology%20-%20Quiz%20%282025%29.pdf){.pill download=""} [Open in new tab](slides/teaching/Core%20Principles%20of%20Epidemiology%20-%20Quiz%20%282025%29.pdf){.pill target="_blank" rel="noopener noreferrer"}
+:::
+::: {.resource}
+[Lecture Slides]{.resource-label} [Download (PDF)](slides/teaching/Core%20Principles%20of%20Epidemiology%20-%20DAGs%20%282025%29.pdf){.pill download=""} [Open in new tab](slides/teaching/Core%20Principles%20of%20Epidemiology%20-%20DAGs%20%282025%29.pdf){.pill target="_blank" rel="noopener noreferrer"}
+:::
+::::

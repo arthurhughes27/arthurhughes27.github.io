@@ -5,7 +5,7 @@ site: distill::distill_website
 links:
   - label: Google Scholar
     url: "https://scholar.google.com/citations?user=PSWWvJQAAAAJ&hl=en"
-  - label: Linkedin
+  - label: LinkedIn
     url: "https://www.linkedin.com/in/arthur-hughes-4a63a6243?originalSubdomain=fr"
   - label: GitHub
     url: "https://github.com/arthurhughes27"
@@ -17,30 +17,41 @@ output:
  
 ## Bio
 
-I am a PhD student in biostatistics at the University of Bordeaux, France. I work on new methodology for analysing high-dimensional molecular data in the context of vaccine experiments. My research interests include causal inference, surrogate markers, non-parametric statistics, as well as data visualisation and communication. 
+I am a PhD student in biostatistics at the University of Bordeaux, France. I work on new methodology for analysing high-dimensional molecular data in the context of vaccine experiments. My research interests include causal inference, surrogate markers, non-parametric statistics, as well as data visualisation and communication.
 
-<p>
-  <a href="internships/Curriculum_Vitae.pdf"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="font-size: 1.3em; font-weight: bold;">
-    Curriculum Vitae
-  </a>
-</p>
+[Curriculum Vitae](internships/Curriculum_Vitae.pdf){.pill .pill-lg target="_blank" rel="noopener noreferrer"}
 
 ## Education
 
-**University of Bordeaux, France** 
+:::: {.timeline-item}
+::: {.timeline-main}
+**PhD in Public Health : Biostatistics**\
+University of Bordeaux, France
+:::
+::: {.timeline-dates}
+October 2023 – October 2026 (ongoing)
+:::
+::::
 
-PhD in Public Health : Biostatistics | October 2023 - October 2026 (ongoing)
+:::: {.timeline-item}
+::: {.timeline-main}
+**MSc in Public Health Data Science**\
+University of Bordeaux, France
+:::
+::: {.timeline-dates}
+September 2022 – July 2023
+:::
+::::
 
-**University of Bordeaux, France** 
-
-MSc in Public Health Data Science | September 2022 - July 2023
-
-**University of Bath, United Kingdom** 
-
-Master of Mathematics | September 2018 - June 2022
+:::: {.timeline-item}
+::: {.timeline-main}
+**Master of Mathematics**\
+University of Bath, United Kingdom
+:::
+::: {.timeline-dates}
+September 2018 – June 2022
+:::
+::::
 
 ## Contact
 

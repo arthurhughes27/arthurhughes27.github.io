@@ -14,32 +14,28 @@ I have no current internship offers. Any new offers will appear here. If you are
 
 ### 2025
 
-**Title : Evaluation of Approaches for Identifying High-Dimensional Individual-Level Surrogate Markers Applied to Vaccinology** 
+:::: {.entry}
+#### Evaluation of Approaches for Identifying High-Dimensional Individual-Level Surrogate Markers Applied to Vaccinology
 
-**Description:** Proposition for a 6 month internship for a master's student, co-supervised by myself and Boris Hejblum. The subject of the internship is the comparison of methods for identifying individual-level surrogate markers of the vaccine response. The project was completed by Master student Roaya Jannatipour. 
+**Description:** Proposition for a 6 month internship for a master's student, co-supervised by myself and Boris Hejblum. The subject of the internship is the comparison of methods for identifying individual-level surrogate markers of the vaccine response. The project was completed by Master student Roaya Jannatipour.
 
-<p>
-  <a href="internships/Internship_proposal_25_26_ILS.pdf" target="_blank" rel="noopener noreferrer">View internship offer</a>
-</p>
+[View internship offer](internships/Internship_proposal_25_26_ILS.pdf){.pill target="_blank" rel="noopener noreferrer"}
+::::
 
-<hr style="border:0; height:3px;
-    background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.22), rgba(0,0,0,0.06));
-    margin:1.5rem 0;">
+:::: {.entry}
+#### Evaluation of Gene Expression as Trial-Level Surrogate Markers of Vaccination Across Multiple Settings
 
-**Title : Evaluation of Gene Expression as Trial-Level Surrogate Markers of Vaccination Across Multiple Settings** 
+**Description:** Proposition for a 6 month internship for a master's student, co-supervised by myself and Boris Hejblum. The subject of the internship is the evaluation of trial-level surrogate markers of the vaccine response using our recently developed approach, using meta-analysis tools to evaluate the generalisability of signatures across multiple clinical trials.
 
-**Description:** Proposition for a 6 month internship for a master's student, co-supervised by myself and Boris Hejblum. The subject of the internship is the evaluation of trial-level surrogate markers of the vaccine response using our recently developed approach, using meta-analysis tools to evaluate the generalisability of signatures across multiple clinical trials. 
-
-<p>
-  <a href="internships/Internship_proposal_25_26_TLS.pdf" target="_blank" rel="noopener noreferrer">View internship offer</a>
-</p>
+[View internship offer](internships/Internship_proposal_25_26_TLS.pdf){.pill target="_blank" rel="noopener noreferrer"}
+::::
 
 ### 2024
 
-**Title : Evaluating High-Dimensional Surrogate Markers of the Yellow Fever Vaccine Response** 
+:::: {.entry}
+#### Evaluating High-Dimensional Surrogate Markers of the Yellow Fever Vaccine Response
 
-**Description:** Proposition for a 6 month internship for a master's student, co-supervised by myself and Boris Hejblum. The subject of the internship was the identification and evaluation of high-dimensional trial-level surrogate markers of the vaccine response to yellow fever vaccination. The project was completed by Master student Theodora Georgakopoulou. 
+**Description:** Proposition for a 6 month internship for a master's student, co-supervised by myself and Boris Hejblum. The subject of the internship was the identification and evaluation of high-dimensional trial-level surrogate markers of the vaccine response to yellow fever vaccination. The project was completed by Master student Theodora Georgakopoulou.
 
-<p>
-  <a href="internships/Internship_offer_24_25.pdf" target="_blank" rel="noopener noreferrer">View internship offer</a>
-</p>
+[View internship offer](internships/Internship_offer_24_25.pdf){.pill target="_blank" rel="noopener noreferrer"}
+::::
