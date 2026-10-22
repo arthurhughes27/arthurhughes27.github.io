@@ -11,8 +11,6 @@ links:
     url: "https://github.com/arthurhughes27"
   - label: ORCID
     url: "https://orcid.org/0009-0001-5841-2580"
-  - label: Email
-    url: "mailto:arthur.hughes@u-bordeaux.fr"
 output:
   postcards::solana
 ---
