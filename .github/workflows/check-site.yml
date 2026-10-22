@@ -1,0 +1,18 @@
+name: Check site
+
+# Fails a pull request if a local link in the sources or the built pages points to a
+# file that does not exist (case-sensitive, like GitHub Pages), or if a built page is
+# too large for search engines to read completely (see scripts/check_page_size.R).
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+      - run: Rscript scripts/check_links.R
+      - run: Rscript scripts/check_page_size.R

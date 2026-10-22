@@ -1,7 +1,9 @@
 ---
 title: "Teaching"
 output:
-  postcards::solana
+  postcards::solana:
+    includes:
+      in_header: includes/meta/teaching.html
 ---
 
 ```{r setup, include=FALSE}

@@ -20,7 +20,7 @@
     btn.href = 'javascript:void(0);';
     btn.className = 'theme-toggle';
     function paint() {
-      btn.textContent = isDark() ? '☀' : '☾';
+      btn.textContent = isDark() ? '\u2600' : '\u263E';
       var label = isDark() ? 'Switch to light theme' : 'Switch to dark theme';
       btn.setAttribute('aria-label', label);
       btn.setAttribute('title', label);

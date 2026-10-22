@@ -1,7 +1,9 @@
 ---
 title: "Publications"
 output:
-  postcards::solana
+  postcards::solana:
+    includes:
+      in_header: includes/meta/publications.html
 ---
 
 :::: {.entry}

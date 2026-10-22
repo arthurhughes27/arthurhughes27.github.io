@@ -1,7 +1,9 @@
 ---
 title: "Software"
 output:
-  postcards::solana
+  postcards::solana:
+    includes:
+      in_header: includes/meta/software.html
 ---
 
 :::: {.software-item}
