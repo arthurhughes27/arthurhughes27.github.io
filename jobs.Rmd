@@ -1,7 +1,9 @@
 ---
 title: "Jobs"
 output:
-  postcards::solana
+  postcards::solana:
+    includes:
+      in_header: includes/meta/jobs.html
 ---
  
 ## Current Offers

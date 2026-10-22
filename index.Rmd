@@ -14,7 +14,9 @@ links:
   - label: ORCID
     url: "https://orcid.org/0009-0001-5841-2580"
 output:
-  postcards::solana
+  postcards::solana:
+    includes:
+      in_header: includes/meta/index.html
 ---
  
 ## Bio

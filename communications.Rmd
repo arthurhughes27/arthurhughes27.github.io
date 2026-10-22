@@ -1,7 +1,9 @@
 ---
 title: "Selected Communications"
 output:
-  postcards::solana
+  postcards::solana:
+    includes:
+      in_header: includes/meta/communications.html
 ---
 
 ## Oral presentations

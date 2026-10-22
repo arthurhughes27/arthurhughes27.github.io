@@ -20,9 +20,8 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
-html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -456,8 +455,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
@@ -1939,7 +1936,33 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* ============================================================
      1. FONTS AND DESIGN TOKENS
      ============================================================ */
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+  /* Self-hosted (Latin subset, variable fonts): about 100 KB in total instead of the
+     1.4 MB of full TTF files that embedding the Google Fonts CSS produced, and no
+     request to Google when a page loads. Roboto Mono: Apache 2.0; IBM Plex Sans: SIL OFL 1.1. */
+  @font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url(fonts/roboto-mono-latin.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url(fonts/ibm-plex-sans-latin.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'IBM Plex Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/ibm-plex-sans-italic-latin.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
 
   /* The postcards template sets its fonts from --body-font, --heading-font and
      --navbar-font, so overriding those variables needs no !important.
@@ -2429,7 +2452,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.32/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2439,8 +2462,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <meta name="description" content="Personal website of Arthur Hughes, PhD student in biostatistics at the University of Bordeaux: research on high-dimensional surrogate markers in vaccinology, teaching materials, publications, software, and talks.">
   <meta name="author" content="Arthur Hughes">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Arthur Hughes">
+  <meta property="og:image" content="https://arthurhughes27.github.io/images/portrait.jpeg">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "Person", "name": "Arthur Hughes", "url": "https://arthurhughes27.github.io/", "image": "https://arthurhughes27.github.io/images/portrait.jpeg", "jobTitle": "PhD student in biostatistics", "affiliation": {"@type": "CollegeOrUniversity", "name": "University of Bordeaux", "url": "https://www.u-bordeaux.fr/"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "University of Bordeaux"}, {"@type": "CollegeOrUniversity", "name": "University of Bath"}], "knowsAbout": ["biostatistics", "surrogate markers", "causal inference", "nonparametric statistics", "vaccinology", "omics data"], "sameAs": ["https://www.linkedin.com/in/arthur-hughes-4a63a6243", "https://github.com/arthurhughes27", "https://orcid.org/0009-0001-5841-2580", "https://scholar.google.com/citations?user=PSWWvJQAAAAJ"]}
+  </script>
 
   <!--/radix_placeholder_site_in_header-->
 
