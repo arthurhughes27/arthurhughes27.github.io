@@ -8,6 +8,19 @@
 /* --- External font --- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
 
+/* --- Design tokens --- */
+:root {
+  --paper: #f9eae1;
+  --ink: #111;
+  --header: #002928;
+  --accent: #0b6b66;       /* link colour: 5:1 contrast on --paper */
+  --accent-dark: #002928;
+  --muted: #555;
+  --card-bg: rgba(255,255,255,0.5);
+  --card-border: rgba(0,0,0,0.1);
+  --heading-font: 'Roboto Mono', monospace;   /* picked up by the postcards heading rule */
+}
+
 /* --- Base / reset adjustments --- */
 html, body {
   font-family: 'Roboto Mono', monospace !important;
@@ -295,13 +308,20 @@ body.postcards-site .distill-site-header::after,
 
 /* --- Links & anchors --- */
 a, a:visited {
-  color: #111;
-  text-decoration: none;
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
   font-family: 'Roboto Mono', monospace !important;
 }
 a:hover {
-  text-decoration: underline;
-  opacity: 0.92;
+  color: var(--accent-dark);
+  text-decoration-thickness: 2px;
+}
+/* hero buttons are links wrapping a <button>: no underline */
+#icon-list a,
+.list-group a {
+  text-decoration: none;
 }
 
 /* --- Small spacing helpers --- */
@@ -309,8 +329,8 @@ a:hover {
 .my-3 { margin-top: 1rem !important; margin-bottom: 1rem !important; }
 
 /* --- Accessibility / focus states --- */
-a:focus, button:focus, .btn-postcard:focus {
-  outline: 3px solid rgba(0,0,0,0.12);
+a:focus-visible, button:focus-visible, input:focus-visible, .btn-postcard:focus-visible {
+  outline: 3px solid var(--accent);
   outline-offset: 2px;
 }
 
@@ -387,4 +407,104 @@ a:focus, button:focus, .btn-postcard:focus {
   margin-bottom: -3rem;  /* space before post listing */
   padding: 0;
   background: transparent !important;
+}
+
+/* ============================================================
+   TYPOGRAPHY: headings use Roboto Mono too via --heading-font (they fell back to Arial)
+   ============================================================ */
+h1, h2, h3, h4, h5, h6 { color: var(--ink); }
+h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em; }
+h2 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.01em; margin-top: 2.25rem; margin-bottom: 0.75rem; }
+h3 { font-size: 1.2rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+h4 { font-size: 1.05rem; font-weight: 700; margin-top: 1.25rem; margin-bottom: 0.5rem; }
+.section.level2:first-child > h2 { margin-top: 0; }
+
+/* ============================================================
+   HERO: subpages have no portrait, so hide the empty <img> that
+   left a 15rem gap under the page title, and let the title use
+   the full width.
+   ============================================================ */
+img[src=""] { display: none; }
+.row:has(img[src=""]) > .col-7 { flex: 0 0 100%; max-width: 100%; }
+
+/* Mobile: the empty image block doubled as spacing under the fixed header */
+.d-lg-none .p-3:has(> img[src=""]) { height: 5.5rem; margin: 0 !important; padding: 0 !important; }
+
+/* ...and drop the empty button list that sat under the title */
+#icon-list:not(:has(li)),
+.list-group:not(:has(a)) { display: none; }
+
+/* Social buttons: even spacing when they wrap */
+#icon-list .list-inline-item { margin-right: 0.25rem; }
+#icon-list .btn { margin-right: 0; }
+
+/* ============================================================
+   HEADER: search box and mobile menu toggle
+   ============================================================ */
+.distill-site-header .nav-search { font-size: 0.8rem; }
+.nav-search::placeholder { color: var(--muted); opacity: 1; }
+.distill-site-header a.nav-toggle { font-size: 1.6rem; line-height: 1; }
+
+/* ============================================================
+   COMPONENTS
+   ============================================================ */
+
+/* Pill link buttons (downloads, slides, CV) */
+a.pill, a.pill:visited {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--ink);
+  border-radius: 0.35rem;
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: background-color .12s ease, color .12s ease, transform .12s ease;
+}
+a.pill:hover {
+  background-color: var(--header);
+  border-color: var(--header);
+  color: var(--paper);
+  transform: translateY(-1px);
+}
+a.pill.pill-lg { padding: 0.45rem 1.1rem; font-size: 1rem; }
+
+/* Cards: courses, talks, internship offers */
+.entry {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 0.5rem;
+  padding: 1.1rem 1.4rem 0.9rem;
+  margin: 0 0 1.25rem;
+}
+.entry > h3, .entry > h4 { margin-top: 0; font-size: 1.05rem; }
+.entry .meta { display: block; margin-bottom: 0.75rem; color: var(--muted); font-size: 0.85rem; }
+
+/* Teaching: one row per resource, label then pill links */
+.resource { margin: 0.4rem 0; }
+.resource p { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0; }
+.resource-label { flex: 0 0 15rem; font-weight: 700; font-size: 0.9rem; }
+
+/* Home: education timeline */
+.timeline-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.15rem 1.5rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--card-border);
+}
+.timeline-main p, .timeline-dates p { margin: 0; }
+.timeline-dates { color: var(--muted); font-size: 0.9rem; }
+
+/* Software: logo beside text, stacked on narrow screens */
+.software-item { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.25rem; margin-bottom: 1.25rem; }
+.software-item img { width: 10rem; max-width: 100%; height: auto; }
+.software-text { flex: 1 1 16rem; min-width: 0; }
+.software-text > h3 { margin-top: 0; }
+
+@media (max-width: 576px) {
+  .resource-label { flex-basis: 100%; }
+  .entry { padding: 1rem 1rem 0.75rem; }
 }
