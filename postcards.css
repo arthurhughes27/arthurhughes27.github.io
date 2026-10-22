@@ -218,7 +218,7 @@ a.pill:hover {
 }
 a.pill.pill-lg { padding: 0.45rem 1.1rem; font-size: 1rem; }
 
-/* Cards: courses, talks, internship offers, publications */
+/* Cards: courses, talks, internship offers, publications (title is an h2, h3 or h4) */
 .entry {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
@@ -227,12 +227,12 @@ a.pill.pill-lg { padding: 0.45rem 1.1rem; font-size: 1rem; }
   padding: 1.1rem 1.4rem 0.9rem;
   margin: 0 0 1.25rem;
 }
-.entry > h3, .entry > h4 { margin-top: 0; font-size: 1.05rem; }
+.entry > h2, .entry > h3, .entry > h4 { margin-top: 0; font-size: 1.05rem; }
 .entry .meta { display: block; margin-bottom: 0.75rem; color: var(--muted); font-family: var(--font-mono); font-size: 0.85rem; }
 
-/* Teaching: one row per resource, label then pill links */
+/* Teaching: one row per resource, label then pill links; .pill-row is a bare row of pills */
 .resource { margin: 0.4rem 0; }
-.resource p { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0; }
+.resource p, .pill-row p { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0; }
 .resource-label { flex: 0 0 15rem; font-family: var(--font-mono); font-weight: 700; font-size: 0.9rem; }
 
 /* Home: education timeline */

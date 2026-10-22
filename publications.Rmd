@@ -3,20 +3,28 @@ title: "Publications"
 output:
   postcards::solana
 ---
-**2026**
 
-**Meta-Analysis of High-Dimensional Surrogate Markers**  
-Hughes, A., Thiébaut, R., Parast, L., and Hejblum, B.P.  
-*arXiv preprint*, 2026.  
-[arXiv:2605.03819](https://doi.org/10.48550/arXiv.2605.03819)
+:::: {.entry}
+## Meta-Analysis of High-Dimensional Surrogate Markers
 
+Hughes, A., Thiébaut, R., Parast, L., and Hejblum, B.P.\
+*arXiv preprint*, 2026.
 
-**2025**
+::: {.pill-row}
+[arXiv:2605.03819](https://doi.org/10.48550/arXiv.2605.03819){.pill target="_blank" rel="noopener noreferrer"} [PDF](publications/RISE_meta.pdf){.pill target="_blank" rel="noopener noreferrer"}
+:::
+::::
 
-**RISE: Two-Stage Rank-Based Identification of High-Dimensional Surrogate Markers Applied to Vaccinology**  
-Hughes, A., Parast, L., Thiébaut, R., and Hejblum, B.P.  
-*Statistics in Medicine*, **44**(20–22), 2025.  
-[doi:10.1002/sim.70241](https://doi.org/10.1002/sim.70241)
+:::: {.entry}
+## RISE: Two-Stage Rank-Based Identification of High-Dimensional Surrogate Markers Applied to Vaccinology
+
+Hughes, A., Parast, L., Thiébaut, R., and Hejblum, B.P.\
+*Statistics in Medicine*, **44**(20–22), 2025.
+
+::: {.pill-row}
+[doi:10.1002/sim.70241](https://doi.org/10.1002/sim.70241){.pill target="_blank" rel="noopener noreferrer"} [PDF (preprint version)](publications/RISE.pdf){.pill target="_blank" rel="noopener noreferrer"}
+:::
+::::
 
 ```{r site-includes, echo=FALSE, results='asis'}
 source("includes/site_includes.R"); site_includes()
