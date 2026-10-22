@@ -728,49 +728,49 @@ src: url(data:font/ttf;base64,AAEAAAAOAIAAAwBgR1NVQpMNggIAAAFAAAAANE9TLzKY48FUAA
 }
 
 :root {
-  color-scheme: light dark;
-  --paper: #f5f2ea;
-  --ink: #14213d;
-  --header: #14213d;
-  --accent: #1d4e89;            
-  --link-hover: #14213d;
-  --accent-2: #d98e04;          
-  --muted: #4f5b73;
-  --card-bg: rgba(255,255,255,0.6);
-  --card-border: rgba(20,33,61,0.12);
-  --pill-hover-bg: #14213d;
-  --pill-hover-fg: #f5f2ea;
-  --font-body: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-mono: 'Roboto Mono', monospace;
-  --heading-font: 'Roboto Mono', monospace;   
+color-scheme: light dark;
+--paper: #f5f2ea;
+--ink: #14213d;
+--header: #14213d;
+--accent: #1d4e89; 
+--link-hover: #14213d;
+--accent-2: #d98e04; 
+--muted: #4f5b73;
+--card-bg: rgba(255,255,255,0.6);
+--card-border: rgba(20,33,61,0.12);
+--pill-hover-bg: #14213d;
+--pill-hover-fg: #f5f2ea;
+--font-body: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+--font-mono: 'Roboto Mono', monospace;
+--heading-font: 'Roboto Mono', monospace; 
 }
 @supports (color: light-dark(black, white)) {
-  :root {
-    --paper: light-dark(#f5f2ea, #0f1626);
-    --ink: light-dark(#14213d, #e8e6df);
-    --header: light-dark(#14213d, #0a0f1c);
-    --accent: light-dark(#1d4e89, #8fb8f0);
-    --link-hover: light-dark(#14213d, #f0b429);
-    --accent-2: light-dark(#d98e04, #f0b429);
-    --muted: light-dark(#4f5b73, #9aa6bd);
-    --card-bg: light-dark(rgba(255,255,255,0.6), rgba(255,255,255,0.05));
-    --card-border: light-dark(rgba(20,33,61,0.12), rgba(255,255,255,0.12));
-    --pill-hover-bg: light-dark(#14213d, #f0b429);
-    --pill-hover-fg: light-dark(#f5f2ea, #0f1626);
-  }
+:root {
+--paper: light-dark(#f5f2ea, #0f1626);
+--ink: light-dark(#14213d, #e8e6df);
+--header: light-dark(#14213d, #0a0f1c);
+--accent: light-dark(#1d4e89, #8fb8f0);
+--link-hover: light-dark(#14213d, #f0b429);
+--accent-2: light-dark(#d98e04, #f0b429);
+--muted: light-dark(#4f5b73, #9aa6bd);
+--card-bg: light-dark(rgba(255,255,255,0.6), rgba(255,255,255,0.05));
+--card-border: light-dark(rgba(20,33,61,0.12), rgba(255,255,255,0.12));
+--pill-hover-bg: light-dark(#14213d, #f0b429);
+--pill-hover-fg: light-dark(#f5f2ea, #0f1626);
+}
 }
 :root[data-theme="light"] { color-scheme: light; }
 :root[data-theme="dark"] { color-scheme: dark; }
 
 html, body {
-  font-family: var(--font-body) !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--paper);
-  color: var(--ink);
-  line-height: 1.65;
-  margin: 0;
-  padding: 0;
+font-family: var(--font-body) !important;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+background-color: var(--paper);
+color: var(--ink);
+line-height: 1.65;
+margin: 0;
+padding: 0;
 }
 body { font-size: 1.05rem; }
 
@@ -793,29 +793,29 @@ body.postcards-site .distill-site-header .navbar,
 .navbar,
 header.distill-site-header,
 .distill-site-nav {
-  background-color: var(--header) !important;
-  background: var(--header) !important;
-  color: #ffffff !important;
-  box-shadow: none !important;
-  border: none !important;
+background-color: var(--header) !important;
+background: var(--header) !important;
+color: #ffffff !important;
+box-shadow: none !important;
+border: none !important;
 }
 
 body.postcards-site .distill-site-header::before,
 body.postcards-site .distill-site-header::after,
 .site-nav-wrapper::before,
 .site-nav-wrapper::after {
-  background: var(--header) !important;
-  background-color: var(--header) !important;
+background: var(--header) !important;
+background-color: var(--header) !important;
 }
 
 .distill-site-header .title,
 .distill-site-header .title a,
 .site-header .title,
 .site-header .title a {
-  font-family: 'Roboto Mono', monospace !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.01em;
-  color: #ffffff !important;
+font-family: 'Roboto Mono', monospace !important;
+font-weight: 700 !important;
+letter-spacing: -0.01em;
+color: #ffffff !important;
 }
 
 .distill-site-header .nav a,
@@ -825,465 +825,534 @@ body.postcards-site .distill-site-header::after,
 .navbar a,
 .site-header .nav a,
 .site-nav-wrapper a {
-  font-family: 'Roboto Mono', monospace !important;
-  font-weight: 400 !important;
-  letter-spacing: -0.01em;
-  color: #ffffff !important;
-  opacity: 1 !important;
+font-family: 'Roboto Mono', monospace !important;
+font-weight: 400 !important;
+letter-spacing: -0.01em;
+color: #ffffff !important;
+opacity: 1 !important;
 }
 
 .distill-site-header .nav a.active,
 .site-nav a.active,
 .navbar a.active {
-  font-family: 'Roboto Mono', monospace !important;
-  font-weight: 600 !important;
-  color: #fff8f8 !important;
-  text-decoration: underline !important;
+font-family: 'Roboto Mono', monospace !important;
+font-weight: 600 !important;
+color: #fff8f8 !important;
+text-decoration: underline !important;
 }
 
 .distill-site-header .nav a:hover,
 .site-nav a:hover,
 .navbar a:hover {
-  color: #fff5f8 !important;
-  opacity: 0.95 !important;
+color: #fff5f8 !important;
+opacity: 0.95 !important;
 }
 
 .distill-site-header,
 .site-nav-wrapper,
 .site-header {
-  background-image: none !important;
+background-image: none !important;
 }
 
 .distill-site-header .container,
 .site-nav-wrapper .container,
 .site-header .container {
-  background: transparent !important;
+background: transparent !important;
 }
 
 .distill-site-header,
 .site-nav-wrapper,
 .site-header {
-  padding-top: 0.45rem !important;
-  padding-bottom: 0.45rem !important;
+padding-top: 0.45rem !important;
+padding-bottom: 0.45rem !important;
 }
 
 .distill-site-header .navbar-toggler,
 .site-header .navbar-toggler,
 .site-nav .navbar-toggler {
-  border-color: rgba(255,255,255,0.25) !important;
-  color: #ffffff !important;
+border-color: rgba(255,255,255,0.25) !important;
+color: #ffffff !important;
 }
 
 .distill-site-header .navbar-toggler-icon,
 .site-header .navbar-toggler-icon {
-  background-image: none !important; 
+background-image: none !important; 
 }
 .distill-site-header .navbar-toggler span,
 .site-header .navbar-toggler span {
-  background-color: #ffffff !important;
-  display: block;
-  height: 2px;
-  width: 22px;
-  margin: 4px 0;
+background-color: #ffffff !important;
+display: block;
+height: 2px;
+width: 22px;
+margin: 4px 0;
 }
 
+
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    max-width: 100%;
-  }
+.container {
+width: 768px;
+max-width: 100%;
+}
 }
 
 .postcards-hero {
-  display: block;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+display: block;
+margin-top: 2.5rem;
+margin-bottom: 2.5rem;
 }
 @media (min-width: 992px) {
-  .postcards-hero {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-  }
-  .postcards-hero .hero-left {
-    flex: 1 1 55%;
-  }
-  .postcards-hero .hero-right {
-    flex: 1 1 40%;
-    display: flex;
-    justify-content: flex-end;
-  }
+.postcards-hero {
+display: flex;
+align-items: center;
+gap: 1.25rem;
+}
+.postcards-hero .hero-left {
+flex: 1 1 55%;
+}
+.postcards-hero .hero-right {
+flex: 1 1 40%;
+display: flex;
+justify-content: flex-end;
+}
 }
 
 .postcards-hero h1, header h1 {
-  font-size: 2.1rem;
-  margin: 0 0 0.5rem 0;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  font-family: 'Roboto Mono', monospace !important;
+font-size: 2.1rem;
+margin: 0 0 0.5rem 0;
+font-weight: 700;
+letter-spacing: -0.01em;
+font-family: 'Roboto Mono', monospace !important;
 }
 
 .postcards-hero .hero-hr,
 .postcards-hero hr.hero-compact {
-  display: block;
-  width: 48%;
-  max-width: 200px;
-  margin: 0 0 1rem 0;
-  border: 0;
-  border-top: 2px solid rgba(0,0,0,0.85);
-  padding: 0;
+display: block;
+width: 48%;
+max-width: 200px;
+margin: 0 0 1rem 0;
+border: 0;
+border-top: 2px solid rgba(0,0,0,0.85);
+padding: 0;
 }
 
 .postcards-hero .btn-postcard,
 #icon-list .btn {
-  display: inline-block;
-  font-family: 'Roboto Mono', monospace !important;
-  font-weight: 500;
-  border-radius: 0.35rem;
-  padding: 0.45rem 0.8rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.4rem;
-  border: 1px solid var(--ink);
-  background-color: transparent;
-  color: var(--ink);
-  text-decoration: none;
-  cursor: pointer;
-  transition: transform .12s ease, background-color .12s ease, color .12s ease, opacity .12s ease;
+display: inline-block;
+font-family: 'Roboto Mono', monospace !important;
+font-weight: 500;
+border-radius: 0.35rem;
+padding: 0.45rem 0.8rem;
+margin-right: 0.5rem;
+margin-bottom: 0.4rem;
+border: 1px solid var(--ink);
+background-color: transparent;
+color: var(--ink);
+text-decoration: none;
+cursor: pointer;
+transition: transform .12s ease, background-color .12s ease, color .12s ease, opacity .12s ease;
 }
 .postcards-hero .btn-postcard:hover,
 #icon-list .btn:hover {
-  transform: translateY(-2px);
-  opacity: 0.95;
+transform: translateY(-2px);
+opacity: 0.95;
 }
 
 .postcards-hero .list-group-postcards {
-  display: block;
-  width: 100%;
-  margin-top: 0.75rem;
+display: block;
+width: 100%;
+margin-top: 0.75rem;
 }
 .postcards-hero .list-group-postcards .list-group-item {
-  font-family: 'Roboto Mono', monospace !important;
-  border-radius: 0.375rem;
-  margin-bottom: 0.5rem;
-  border: 1px solid var(--ink);
-  background-color: var(--paper);
-  color: var(--ink);
-  padding: 0.6rem 0.75rem;
+font-family: 'Roboto Mono', monospace !important;
+border-radius: 0.375rem;
+margin-bottom: 0.5rem;
+border: 1px solid var(--ink);
+background-color: var(--paper);
+color: var(--ink);
+padding: 0.6rem 0.75rem;
 }
 
 .postcards-hero img.hero-image,
 .postcards-hero img.rounded {
-  border-radius: 0.5rem;
-  object-fit: cover;
-  display: block;
-  width: 100%;
-  height: 15rem;
-  max-width: 100%;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+border-radius: 0.5rem;
+object-fit: cover;
+display: block;
+width: 100%;
+height: 15rem;
+max-width: 100%;
+box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 @media (min-width: 992px) {
-  .postcards-hero img.hero-image.float-right {
-    float: right;
-    margin-left: 1rem;
-    height: 15rem;
-  }
+.postcards-hero img.hero-image.float-right {
+float: right;
+margin-left: 1rem;
+height: 15rem;
+}
 }
 
 .postcards-hero .hero-body {
-  margin-top: 1rem;
-  color: var(--ink);
-  font-family: 'Roboto Mono', monospace !important;
+margin-top: 1rem;
+color: var(--ink);
+font-family: 'Roboto Mono', monospace !important;
 }
 
 .postcard-card {
-  background: var(--card-bg);
-  border-radius: 0.5rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.04);
-  border: 1px solid rgba(0,0,0,0.04);
+background: var(--card-bg);
+border-radius: 0.5rem;
+padding: 1rem;
+margin-bottom: 1rem;
+box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+border: 1px solid rgba(0,0,0,0.04);
 }
 
 .listing .post .post-title a,
 .postcard-card h2 a,
 .postcard-card h3 a {
-  color: var(--ink);
-  text-decoration: none;
-  font-family: 'Roboto Mono', monospace !important;
+color: var(--ink);
+text-decoration: none;
+font-family: 'Roboto Mono', monospace !important;
 }
 .listing .post {
-  margin-bottom: 1rem;
+margin-bottom: 1rem;
 }
 
 a, a:visited {
-  color: var(--accent);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-  font-family: inherit;
+color: var(--accent);
+text-decoration: underline;
+text-decoration-thickness: 1px;
+text-underline-offset: 0.18em;
+font-family: inherit;
 }
 a:hover {
-  color: var(--link-hover);
-  text-decoration-thickness: 2px;
+color: var(--link-hover);
+text-decoration-thickness: 2px;
 }
+/* hero buttons are links wrapping a <button>: no underline */
+          #icon-list a,
+          .list-group a {
+            text-decoration: none;
+          }
 
-#icon-list a,
-.list-group a {
-  text-decoration: none;
-}
+          /* --- Small spacing helpers --- */
+          .mt-5 { margin-top: 3rem !important; }
+          .my-3 { margin-top: 1rem !important; margin-bottom: 1rem !important; }
 
-.mt-5 { margin-top: 3rem !important; }
-.my-3 { margin-top: 1rem !important; margin-bottom: 1rem !important; }
+          /* --- Accessibility / focus states --- */
+          a:focus-visible, button:focus-visible, input:focus-visible, .btn-postcard:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 2px;
+          }
 
-a:focus-visible, button:focus-visible, input:focus-visible, .btn-postcard:focus-visible {
-  outline: 3px solid var(--accent);
-  outline-offset: 2px;
-}
+          /* ============================================================
+             SITE-WIDE ROBOTO MONO OVERRIDES FOR DISTILL ELEMENTS
+             ============================================================ */
 
-.distill-site-header .title,
-.distill-site-header .title a {
-  font-family: 'Roboto Mono', monospace !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.01em;
-  color: #ffffff !important;
-}
+          /* Distill site title (top-left) */
+          .distill-site-header .title,
+          .distill-site-header .title a {
+            font-family: 'Roboto Mono', monospace !important;
+            font-weight: 700 !important;
+            letter-spacing: -0.01em;
+            color: #ffffff !important;
+          }
 
-.distill-site-header .nav a,
-.distill-site-header .nav-left a,
-.distill-site-header .nav-right a {
-  font-family: 'Roboto Mono', monospace !important;
-  font-weight: 400 !important;
-  letter-spacing: -0.01em;
-  color: #ffffff !important;
-}
+          /* Distill navigation tabs (top-right) */
+          .distill-site-header .nav a,
+          .distill-site-header .nav-left a,
+          .distill-site-header .nav-right a {
+            font-family: 'Roboto Mono', monospace !important;
+            font-weight: 400 !important;
+            letter-spacing: -0.01em;
+            color: #ffffff !important;
+          }
 
-.distill-site-header .nav a.active {
-  font-family: 'Roboto Mono', monospace !important;
-  font-weight: 500 !important;
-  color: #fff8f8 !important;
-}
+          /* Active tab link */
+          .distill-site-header .nav a.active {
+            font-family: 'Roboto Mono', monospace !important;
+            font-weight: 500 !important;
+            color: #fff8f8 !important;
+          }
 
-.distill-page h1,
-.distill-page h2,
-.distill-page h3,
-.distill-page h4,
-.distill-page h5,
-.distill-page h6 {
-  font-family: 'Roboto Mono', monospace !important;
-}
+          /* Page titles inside content area */
+          .distill-page h1,
+          .distill-page h2,
+          .distill-page h3,
+          .distill-page h4,
+          .distill-page h5,
+          .distill-page h6 {
+            font-family: 'Roboto Mono', monospace !important;
+          }
 
-.d-title h1,
-.d-title h2,
-.d-title h3 {
-  font-family: 'Roboto Mono', monospace !important;
-}
+          /* Front-matter page title that distill renders */
+          .d-title h1,
+          .d-title h2,
+          .d-title h3 {
+            font-family: 'Roboto Mono', monospace !important;
+          }
 
-.d-byline,
-.d-byline p,
-.d-byline a {
-  font-family: 'Roboto Mono', monospace !important;
-}
+          /* Article metadata (date, authors) */
+          .d-byline,
+          .d-byline p,
+          .d-byline a {
+            font-family: 'Roboto Mono', monospace !important;
+          }
 
-.d-toc,
-.d-toc a,
-.d-toc li {
-  font-family: 'Roboto Mono', monospace !important;
-}
+          /* Table of contents */
+          .d-toc,
+          .d-toc a,
+          .d-toc li {
+            font-family: 'Roboto Mono', monospace !important;
+          }
 
-.distill-site-footer,
-.distill-site-footer a {
-  font-family: 'Roboto Mono', monospace !important;
-  color: var(--ink) !important;
-}
+          /* Footer */
+          .distill-site-footer,
+          .distill-site-footer a {
+            font-family: 'Roboto Mono', monospace !important;
+            color: var(--ink) !important;
+          }
 
-.blog-intro {
-  margin-top: 4rem;     
-  margin-bottom: -3rem;  
-  padding: 0;
-  background: transparent !important;
-}
+          .blog-intro {
+            margin-top: 4rem;     /* space from header */
+            margin-bottom: -3rem;  /* space before post listing */
+            padding: 0;
+            background: transparent !important;
+          }
 
-h1, h2, h3, h4, h5, h6 { color: var(--ink); }
-h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em; }
-h2 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.01em; margin-top: 2.25rem; margin-bottom: 0.75rem; }
-h3 { font-size: 1.2rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; }
-h4 { font-size: 1.05rem; font-weight: 700; margin-top: 1.25rem; margin-bottom: 0.5rem; }
-.section.level2:first-child > h2 { margin-top: 0; }
+          /* ============================================================
+             TYPOGRAPHY: headings use Roboto Mono too via --heading-font (they fell back to Arial)
+             ============================================================ */
+          h1, h2, h3, h4, h5, h6 { color: var(--ink); }
+          h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em; }
+          h2 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.01em; margin-top: 2.25rem; margin-bottom: 0.75rem; }
+          h3 { font-size: 1.2rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+          h4 { font-size: 1.05rem; font-weight: 700; margin-top: 1.25rem; margin-bottom: 0.5rem; }
+          .section.level2:first-child > h2 { margin-top: 0; }
 
-img[src=""] { display: none; }
-.row:has(img[src=""]) > .col-7 { flex: 0 0 100%; max-width: 100%; }
+          /* ============================================================
+             HERO: subpages have no portrait, so hide the empty <img> that
+             left a 15rem gap under the page title, and let the title use
+             the full width.
+             ============================================================ */
+          img[src=""] { display: none; }
+          .row:has(img[src=""]) > .col-7 { flex: 0 0 100%; max-width: 100%; }
 
-.d-lg-none .p-3:has(> img[src=""]) { height: 5.5rem; margin: 0 !important; padding: 0 !important; }
+          /* Mobile: the empty image block doubled as spacing under the fixed header */
+          .d-lg-none .p-3:has(> img[src=""]) { height: 5.5rem; margin: 0 !important; padding: 0 !important; }
 
-#icon-list:not(:has(li)),
-.list-group:not(:has(a)) { display: none; }
+          /* ...and drop the empty button list that sat under the title */
+          #icon-list:not(:has(li)),
+          .list-group:not(:has(a)) { display: none; }
 
-#icon-list .list-inline-item { margin-right: 0.25rem; }
-#icon-list .btn { margin-right: 0; }
+          /* Social buttons: even spacing when they wrap */
+          #icon-list .list-inline-item { margin-right: 0.25rem; }
+          #icon-list .btn { margin-right: 0; }
 
-.distill-site-header .nav-search { font-size: 0.8rem; }
-.nav-search::placeholder { color: var(--muted); opacity: 1; }
-.distill-site-header a.nav-toggle { font-size: 1.6rem; line-height: 1; }
+          /* ============================================================
+             HEADER: search box and mobile menu toggle
+             ============================================================ */
+          .distill-site-header .nav-search { font-size: 0.8rem; }
+          .nav-search::placeholder { color: var(--muted); opacity: 1; }
+          .distill-site-header a.nav-toggle { font-size: 1.6rem; line-height: 1; }
 
-a.pill, a.pill:visited {
-  display: inline-block;
-  padding: 0.3rem 0.8rem;
-  border: 1px solid var(--ink);
-  border-radius: 0.35rem;
-  color: var(--ink);
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  font-weight: 500;
-  line-height: 1.4;
-  text-decoration: none;
-  transition: background-color .12s ease, color .12s ease, transform .12s ease;
-}
-a.pill:hover {
-  background-color: var(--pill-hover-bg);
-  border-color: var(--pill-hover-bg);
-  color: var(--pill-hover-fg);
-  transform: translateY(-1px);
-}
-a.pill.pill-lg { padding: 0.45rem 1.1rem; font-size: 1rem; }
+          /* ============================================================
+             COMPONENTS
+             ============================================================ */
 
-.entry {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-left: 4px solid var(--accent-2);
-  border-radius: 0.5rem;
-  padding: 1.1rem 1.4rem 0.9rem;
-  margin: 0 0 1.25rem;
-}
-.entry > h3, .entry > h4 { margin-top: 0; font-size: 1.05rem; }
-.entry .meta { display: block; margin-bottom: 0.75rem; color: var(--muted); font-family: var(--font-mono); font-size: 0.85rem; }
+          /* Pill link buttons (downloads, slides, CV) */
+          a.pill, a.pill:visited {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border: 1px solid var(--ink);
+            border-radius: 0.35rem;
+            color: var(--ink);
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 500;
+            line-height: 1.4;
+            text-decoration: none;
+            transition: background-color .12s ease, color .12s ease, transform .12s ease;
+          }
+          a.pill:hover {
+            background-color: var(--pill-hover-bg);
+            border-color: var(--pill-hover-bg);
+            color: var(--pill-hover-fg);
+            transform: translateY(-1px);
+          }
+          a.pill.pill-lg { padding: 0.45rem 1.1rem; font-size: 1rem; }
 
-.resource { margin: 0.4rem 0; }
-.resource p { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0; }
-.resource-label { flex: 0 0 15rem; font-family: var(--font-mono); font-weight: 700; font-size: 0.9rem; }
+          /* Cards: courses, talks, internship offers */
+          .entry {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-left: 4px solid var(--accent-2);
+            border-radius: 0.5rem;
+            padding: 1.1rem 1.4rem 0.9rem;
+            margin: 0 0 1.25rem;
+          }
+          .entry > h3, .entry > h4 { margin-top: 0; font-size: 1.05rem; }
+          .entry .meta { display: block; margin-bottom: 0.75rem; color: var(--muted); font-family: var(--font-mono); font-size: 0.85rem; }
 
-.timeline-item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 0.15rem 1.5rem;
-  padding: 0.75rem 0;
-  border-top: 1px solid var(--card-border);
-}
-.timeline-main p, .timeline-dates p { margin: 0; }
-.timeline-dates { color: var(--muted); font-family: var(--font-mono); font-size: 0.85rem; }
+          /* Teaching: one row per resource, label then pill links */
+          .resource { margin: 0.4rem 0; }
+          .resource p { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0; }
+          .resource-label { flex: 0 0 15rem; font-family: var(--font-mono); font-weight: 700; font-size: 0.9rem; }
 
-.software-item { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.25rem; margin-bottom: 1.25rem; }
-.software-item img { width: 10rem; max-width: 100%; height: auto; }
-.software-text { flex: 1 1 16rem; min-width: 0; }
-.software-text > h3 { margin-top: 0; }
+          /* Home: education timeline */
+          .timeline-item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0.15rem 1.5rem;
+            padding: 0.75rem 0;
+            border-top: 1px solid var(--card-border);
+          }
+          .timeline-main p, .timeline-dates p { margin: 0; }
+          .timeline-dates { color: var(--muted); font-family: var(--font-mono); font-size: 0.85rem; }
 
-@media (max-width: 576px) {
-  .resource-label { flex-basis: 100%; }
-  .entry { padding: 1rem 1rem 0.75rem; }
-}
+          /* Software: logo beside text, stacked on narrow screens */
+          .software-item { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.25rem; margin-bottom: 1.25rem; }
+          .software-item img { width: 10rem; max-width: 100%; height: auto; }
+          .software-text { flex: 1 1 16rem; min-width: 0; }
+          .software-text > h3 { margin-top: 0; }
 
-.btn, button, input, .list-group-item { font-family: var(--font-mono); }
+          @media (max-width: 576px) {
+            .resource-label { flex-basis: 100%; }
+            .entry { padding: 1rem 1rem 0.75rem; }
+          }
 
-.container hr {
-  width: 3rem !important;
-  max-width: 3rem !important;
-  height: 0;
-  margin: 0.6rem 0 1.25rem;
-  border: 0 !important;
-  border-top: 3px solid var(--accent-2) !important;
-  opacity: 1;
-}
+          /* ============================================================
+             MONO FOR UI, SANS FOR READING
+             Body text is IBM Plex Sans; buttons, inputs and navigation stay mono.
+             ============================================================ */
+          .btn, button, input, .list-group-item { font-family: var(--font-mono); }
 
-.d-lg-none hr { margin-left: auto !important; margin-right: auto !important; }
+          /* ============================================================
+             ACCENT 2 (amber): bar under page titles, active nav item
+             ============================================================ */
+          .container hr {
+            width: 3rem !important;
+            max-width: 3rem !important;
+            height: 0;
+            margin: 0.6rem 0 1.25rem;
+            border: 0 !important;
+            border-top: 3px solid var(--accent-2) !important;
+            opacity: 1;
+          }
+          /* mobile hero is centred (desktop hr keeps its inline margin-left: 0) */
+          .d-lg-none hr { margin-left: auto !important; margin-right: auto !important; }
 
-.distill-site-header .nav-right a[aria-current="page"] {
-  text-decoration: underline var(--accent-2) 2px !important;
-  text-underline-offset: 0.45em;
-}
+          .distill-site-header .nav-right a[aria-current="page"] {
+            text-decoration: underline var(--accent-2) 2px !important;
+            text-underline-offset: 0.45em;
+          }
 
-.btn-outline-dark, .list-group-item {
-  background-color: transparent !important;
-  color: var(--ink) !important;
-  border-color: var(--ink) !important;
-}
-.btn-outline-dark:hover, .list-group-item:hover {
-  background-color: var(--pill-hover-bg) !important;
-  color: var(--pill-hover-fg) !important;
-  border-color: var(--pill-hover-bg) !important;
-}
-.nav-search { background-color: #fff; color: #14213d; }
+          /* ============================================================
+             DARK MODE: components with hard-coded template colours
+             ============================================================ */
+          /* hero buttons: Bootstrap outline-dark uses fixed greys, and the mobile
+             buttons carry inline colours, so they are overridden here */
+          .btn-outline-dark, .list-group-item {
+            background-color: transparent !important;
+            color: var(--ink) !important;
+            border-color: var(--ink) !important;
+          }
+          .btn-outline-dark:hover, .list-group-item:hover {
+            background-color: var(--pill-hover-bg) !important;
+            color: var(--pill-hover-fg) !important;
+            border-color: var(--pill-hover-bg) !important;
+          }
+          .nav-search { background-color: #fff; color: #14213d; }
 
-.distill-site-header a.theme-toggle { cursor: pointer; text-decoration: none; font-size: 1.1rem; line-height: 1; }
+          /* theme toggle injected into the navbar by includes/theme.html */
+          .distill-site-header a.theme-toggle { cursor: pointer; text-decoration: none; font-size: 1.1rem; line-height: 1; }
 
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { transition: none !important; animation: none !important; }
-  a.pill:hover, #icon-list .btn:hover { transform: none; }
-}
+          /* ============================================================
+             MOTION: respect users who ask for less
+             ============================================================ */
+          @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { transition: none !important; animation: none !important; }
+            a.pill:hover, #icon-list .btn:hover { transform: none; }
+          }
 
-@media (min-width: 992px) {
-  .container { width: 900px; max-width: 100%; }
-}
+          /* ============================================================
+             LAYOUT: wider column on large screens (cards stay single-column)
+             ============================================================ */
+          @media (min-width: 992px) {
+            .container { width: 900px; max-width: 100%; }
+          }
 
-.site-footer {
-  margin-top: 3rem;
-  padding: 1.25rem 0 2rem;
-  border-top: 1px solid var(--card-border);
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-.site-footer p { max-width: none; margin: 0 0 0.35rem; }
-.site-footer-name { color: var(--ink); font-family: var(--font-mono); font-weight: 700; }
-.site-footer-links a { margin-right: 1.1rem; font-family: var(--font-mono); }
-.site-footer-meta a { font-family: var(--font-mono); }
+          /* ============================================================
+             FOOTER (includes/footer.html, emitted at the end of each page)
+             ============================================================ */
+          .site-footer {
+            margin-top: 3rem;
+            padding: 1.25rem 0 2rem;
+            border-top: 1px solid var(--card-border);
+            color: var(--muted);
+            font-size: 0.85rem;
+          }
+          .site-footer p { max-width: none; margin: 0 0 0.35rem; }
+          .site-footer-name { color: var(--ink); font-family: var(--font-mono); font-weight: 700; }
+          .site-footer-links a { margin-right: 1.1rem; font-family: var(--font-mono); }
+          .site-footer-meta a { font-family: var(--font-mono); }
 
-@view-transition { navigation: auto; }
-header.header { view-transition-name: site-header; }
+          /* ============================================================
+             MOTION (all of it off for users who prefer reduced motion)
+             ============================================================ */
+          /* cross-fade between pages; the header gets its own layer so it stays put */
+          @view-transition { navigation: auto; }
+          header.header { view-transition-name: site-header; }
 
-@media (prefers-reduced-motion: no-preference) {
-  html { scroll-behavior: smooth; }
+          @media (prefers-reduced-motion: no-preference) {
+            html { scroll-behavior: smooth; }
 
-  .entry { transition: transform .2s ease, box-shadow .2s ease; }
-  .entry:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(20,33,61,0.10); }
+            /* cards lift slightly on hover */
+            .entry { transition: transform .2s ease, box-shadow .2s ease; }
+            .entry:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(20,33,61,0.10); }
 
-  .container p a:not(.pill),
-  .container li a:not(.pill),
-  .site-footer a,
-  .distill-site-header .nav-right a:not(.theme-toggle):not(.nav-toggle) {
-    background: linear-gradient(var(--accent-2), var(--accent-2)) 0 100% / 0 2px no-repeat;
-    transition: background-size .25s ease, color .15s ease;
-  }
-  .container p a:not(.pill):hover,
-  .container li a:not(.pill):hover,
-  .site-footer a:hover,
-  .distill-site-header .nav-right a:not(.theme-toggle):not(.nav-toggle):hover {
-    background-size: 100% 2px;
-  }
+            /* amber bar slides in under links on hover */
+            .container p a:not(.pill),
+            .container li a:not(.pill),
+            .site-footer a,
+            .distill-site-header .nav-right a:not(.theme-toggle):not(.nav-toggle) {
+              background: linear-gradient(var(--accent-2), var(--accent-2)) 0 100% / 0 2px no-repeat;
+              transition: background-size .25s ease, color .15s ease;
+            }
+            .container p a:not(.pill):hover,
+            .container li a:not(.pill):hover,
+            .site-footer a:hover,
+            .distill-site-header .nav-right a:not(.theme-toggle):not(.nav-toggle):hover {
+              background-size: 100% 2px;
+            }
 
-  .theme-fade, .theme-fade * {
-    transition: background-color .3s ease, color .3s ease, border-color .3s ease !important;
-  }
-}
+            /* colours fade when the theme is toggled */
+            .theme-fade, .theme-fade * {
+              transition: background-color .3s ease, color .3s ease, border-color .3s ease !important;
+            }
+          }
 
-@keyframes reveal {
-  from { opacity: 0; translate: 0 14px; }
-  to   { opacity: 1; translate: 0 0; }
-}
-@media (prefers-reduced-motion: no-preference) {
-  @supports (animation-timeline: view()) {
-    .entry, .timeline-item, .software-item {
-      animation: reveal linear both;
-      animation-timeline: view();
-      animation-range: entry 0% entry 35%;
-    }
-  }
-}
-
-@media print {
-  .entry, .timeline-item, .software-item { animation: none !important; opacity: 1 !important; translate: none !important; }
-}
-@media (prefers-reduced-motion: reduce) {
-  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
-}</style>
+          /* cards and timeline rows fade in as they scroll into view
+             (scroll-driven animation: browsers without support just show them) */
+          @keyframes reveal {
+            from { opacity: 0; translate: 0 14px; }
+            to   { opacity: 1; translate: 0 0; }
+          }
+          @media (prefers-reduced-motion: no-preference) {
+            @supports (animation-timeline: view()) {
+              .entry, .timeline-item, .software-item {
+                animation: reveal linear both;
+                animation-timeline: view();
+                animation-range: entry 0% entry 35%;
+              }
+            }
+          }
+          /* printing and static captures never scroll, so show everything */
+          @media print {
+            .entry, .timeline-item, .software-item { animation: none !important; opacity: 1 !important; translate: none !important; }
+          }
+          @media (prefers-reduced-motion: reduce) {
+            ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+          }</style>
           <style type="text/css">
 
 
@@ -1553,51 +1622,62 @@ document.addEventListener('DOMContentLoaded', function(e) {
           <p><a href="slides/communications/poster_communication_SMPGD_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Poster</a></p>
           </div>
           <footer class="site-footer">
-<p class="site-footer-name">&copy; 2026 Arthur Hughes</p>
-<p class="site-footer-links"><a href="mailto:arthur.hughes@u-bordeaux.fr">Email</a> <a href="https://orcid.org/0009-0001-5841-2580">ORCID</a> <a href="https://github.com/arthurhughes27">GitHub</a> <a href="https://scholar.google.com/citations?user=PSWWvJQAAAAJ&amp;hl=en">Google Scholar</a> <a href="https://www.linkedin.com/in/arthur-hughes-4a63a6243?originalSubdomain=fr">LinkedIn</a></p>
-<p class="site-footer-meta">Last updated 2026-10-22 &middot; <a href="#">Back to top &uarr;</a></p>
-</footer>
-<script>
-(function () {
-  var root = document.documentElement;
-  try { var saved = localStorage.getItem('theme'); if (saved) { root.setAttribute('data-theme', saved); } } catch (e) {}
-  function isDark() {
-    var t = root.getAttribute('data-theme');
-    return t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  function init() {
-    if (window.__themeInit) { return; }
-    window.__themeInit = true;
-    var links = document.querySelectorAll('.distill-site-header .nav-right a');
-    var here = location.pathname.split('/').pop() || 'index.html';
-    for (var i = 0; i < links.length; i++) {
-      if (links[i].getAttribute('href') === here) { links[i].setAttribute('aria-current', 'page'); }
-    }
-    var nav = document.querySelector('.distill-site-header .nav-right');
-    if (!nav) { return; }
-    var btn = document.createElement('a');
-    btn.href = 'javascript:void(0);';
-    btn.className = 'theme-toggle';
-    function paint() {
-      btn.textContent = isDark() ? '☀' : '☾';
-      var label = isDark() ? 'Switch to light theme' : 'Switch to dark theme';
-      btn.setAttribute('aria-label', label);
-      btn.setAttribute('title', label);
-    }
-    btn.addEventListener('click', function () {
-      var next = isDark() ? 'light' : 'dark';
-      root.classList.add('theme-fade');
-      root.setAttribute('data-theme', next);
-      try { localStorage.setItem('theme', next); } catch (e) {}
-      paint();
-      setTimeout(function () { root.classList.remove('theme-fade'); }, 400);
-    });
-    paint();
-    nav.insertBefore(btn, nav.querySelector('.nav-toggle'));
-  }
-  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
-})();
-</script>
+          <p class="site-footer-name">
+          © 2026 Arthur Hughes
+          </p>
+          <p class="site-footer-links">
+          <a href="mailto:arthur.hughes@u-bordeaux.fr">Email</a>
+          <a href="https://orcid.org/0009-0001-5841-2580">ORCID</a>
+          <a href="https://github.com/arthurhughes27">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=PSWWvJQAAAAJ&amp;hl=en">Google
+          Scholar</a>
+          <a href="https://www.linkedin.com/in/arthur-hughes-4a63a6243?originalSubdomain=fr">LinkedIn</a>
+          </p>
+          <p class="site-footer-meta">
+          Last updated 2026-10-22 · <a href="#">Back to top ↑</a>
+          </p>
+          </footer>
+          <script>
+          (function () {
+            var root = document.documentElement;
+            try { var saved = localStorage.getItem('theme'); if (saved) { root.setAttribute('data-theme', saved); } } catch (e) {}
+            function isDark() {
+              var t = root.getAttribute('data-theme');
+              return t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+            }
+            function init() {
+              if (window.__themeInit) { return; }
+              window.__themeInit = true;
+              var links = document.querySelectorAll('.distill-site-header .nav-right a');
+              var here = location.pathname.split('/').pop() || 'index.html';
+              for (var i = 0; i < links.length; i++) {
+                if (links[i].getAttribute('href') === here) { links[i].setAttribute('aria-current', 'page'); }
+              }
+              var nav = document.querySelector('.distill-site-header .nav-right');
+              if (!nav) { return; }
+              var btn = document.createElement('a');
+              btn.href = 'javascript:void(0);';
+              btn.className = 'theme-toggle';
+              function paint() {
+                btn.textContent = isDark() ? '☀' : '☾';
+                var label = isDark() ? 'Switch to light theme' : 'Switch to dark theme';
+                btn.setAttribute('aria-label', label);
+                btn.setAttribute('title', label);
+              }
+              btn.addEventListener('click', function () {
+                var next = isDark() ? 'light' : 'dark';
+                root.classList.add('theme-fade');
+                root.setAttribute('data-theme', next);
+                try { localStorage.setItem('theme', next); } catch (e) {}
+                paint();
+                setTimeout(function () { root.classList.remove('theme-fade'); }, 400);
+              });
+              paint();
+              nav.insertBefore(btn, nav.querySelector('.nav-toggle'));
+            }
+            if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
+          })();
+          </script>
           </div>
         </div>
       </div>
@@ -1695,51 +1775,62 @@ document.addEventListener('DOMContentLoaded', function(e) {
               <p><a href="slides/communications/poster_communication_SMPGD_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Poster</a></p>
               </div>
               <footer class="site-footer">
-<p class="site-footer-name">&copy; 2026 Arthur Hughes</p>
-<p class="site-footer-links"><a href="mailto:arthur.hughes@u-bordeaux.fr">Email</a> <a href="https://orcid.org/0009-0001-5841-2580">ORCID</a> <a href="https://github.com/arthurhughes27">GitHub</a> <a href="https://scholar.google.com/citations?user=PSWWvJQAAAAJ&amp;hl=en">Google Scholar</a> <a href="https://www.linkedin.com/in/arthur-hughes-4a63a6243?originalSubdomain=fr">LinkedIn</a></p>
-<p class="site-footer-meta">Last updated 2026-10-22 &middot; <a href="#">Back to top &uarr;</a></p>
-</footer>
-<script>
-(function () {
-  var root = document.documentElement;
-  try { var saved = localStorage.getItem('theme'); if (saved) { root.setAttribute('data-theme', saved); } } catch (e) {}
-  function isDark() {
-    var t = root.getAttribute('data-theme');
-    return t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  function init() {
-    if (window.__themeInit) { return; }
-    window.__themeInit = true;
-    var links = document.querySelectorAll('.distill-site-header .nav-right a');
-    var here = location.pathname.split('/').pop() || 'index.html';
-    for (var i = 0; i < links.length; i++) {
-      if (links[i].getAttribute('href') === here) { links[i].setAttribute('aria-current', 'page'); }
-    }
-    var nav = document.querySelector('.distill-site-header .nav-right');
-    if (!nav) { return; }
-    var btn = document.createElement('a');
-    btn.href = 'javascript:void(0);';
-    btn.className = 'theme-toggle';
-    function paint() {
-      btn.textContent = isDark() ? '☀' : '☾';
-      var label = isDark() ? 'Switch to light theme' : 'Switch to dark theme';
-      btn.setAttribute('aria-label', label);
-      btn.setAttribute('title', label);
-    }
-    btn.addEventListener('click', function () {
-      var next = isDark() ? 'light' : 'dark';
-      root.classList.add('theme-fade');
-      root.setAttribute('data-theme', next);
-      try { localStorage.setItem('theme', next); } catch (e) {}
-      paint();
-      setTimeout(function () { root.classList.remove('theme-fade'); }, 400);
-    });
-    paint();
-    nav.insertBefore(btn, nav.querySelector('.nav-toggle'));
-  }
-  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
-})();
-</script>
+              <p class="site-footer-name">
+              © 2026 Arthur Hughes
+              </p>
+              <p class="site-footer-links">
+              <a href="mailto:arthur.hughes@u-bordeaux.fr">Email</a>
+              <a href="https://orcid.org/0009-0001-5841-2580">ORCID</a>
+              <a href="https://github.com/arthurhughes27">GitHub</a>
+              <a href="https://scholar.google.com/citations?user=PSWWvJQAAAAJ&amp;hl=en">Google
+              Scholar</a>
+              <a href="https://www.linkedin.com/in/arthur-hughes-4a63a6243?originalSubdomain=fr">LinkedIn</a>
+              </p>
+              <p class="site-footer-meta">
+              Last updated 2026-10-22 · <a href="#">Back to top ↑</a>
+              </p>
+              </footer>
+              <script>
+              (function () {
+                var root = document.documentElement;
+                try { var saved = localStorage.getItem('theme'); if (saved) { root.setAttribute('data-theme', saved); } } catch (e) {}
+                function isDark() {
+                  var t = root.getAttribute('data-theme');
+                  return t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+                }
+                function init() {
+                  if (window.__themeInit) { return; }
+                  window.__themeInit = true;
+                  var links = document.querySelectorAll('.distill-site-header .nav-right a');
+                  var here = location.pathname.split('/').pop() || 'index.html';
+                  for (var i = 0; i < links.length; i++) {
+                    if (links[i].getAttribute('href') === here) { links[i].setAttribute('aria-current', 'page'); }
+                  }
+                  var nav = document.querySelector('.distill-site-header .nav-right');
+                  if (!nav) { return; }
+                  var btn = document.createElement('a');
+                  btn.href = 'javascript:void(0);';
+                  btn.className = 'theme-toggle';
+                  function paint() {
+                    btn.textContent = isDark() ? '☀' : '☾';
+                    var label = isDark() ? 'Switch to light theme' : 'Switch to dark theme';
+                    btn.setAttribute('aria-label', label);
+                    btn.setAttribute('title', label);
+                  }
+                  btn.addEventListener('click', function () {
+                    var next = isDark() ? 'light' : 'dark';
+                    root.classList.add('theme-fade');
+                    root.setAttribute('data-theme', next);
+                    try { localStorage.setItem('theme', next); } catch (e) {}
+                    paint();
+                    setTimeout(function () { root.classList.remove('theme-fade'); }, 400);
+                  });
+                  paint();
+                  nav.insertBefore(btn, nav.querySelector('.nav-toggle'));
+                }
+                if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
+              })();
+              </script>
               </div>
             </div>
         </div>
