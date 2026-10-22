@@ -70,14 +70,14 @@ In this 6 hour long course, I give an overview on supervised learning in the hig
 
 **Practical work (questions)**
 <p>
-  <a href="practicals/PHDS_omics_supervisedLearning_2026_questions.Rmd" download>Download (.Rmd)</a> |
-  <a href="practicals/PHDS_omics_supervisedLearning_2026_questions.html" target="_blank" rel="noopener noreferrer">Open in new tab (.html)</a>
+  <a href="practicals/PHDS_omics_supervisedlearning_2026_questions.Rmd" download>Download (.Rmd)</a> |
+  <a href="practicals/PHDS_omics_supervisedlearning_2026_questions.html" target="_blank" rel="noopener noreferrer">Open in new tab (.html)</a>
 </p>
 
 **Practical work (solutions)**
 <p>
-  <a href="practicals/PHDS_omics_supervisedLearning_2026_solutions.Rmd" download>Download (.Rmd)</a> |
-  <a href="practicals/PHDS_omics_supervisedLearning_2026_solutions.html" target="_blank" rel="noopener noreferrer">Open in new tab (.html)</a>
+  <a href="practicals/PHDS_omics_supervisedlearning_2026_solutions.Rmd" download>Download (.Rmd)</a> |
+  <a href="practicals/PHDS_omics_supervisedlearning_2026_solutions.html" target="_blank" rel="noopener noreferrer">Open in new tab (.html)</a>
 </p>
 
 
@@ -114,8 +114,8 @@ In this 3 hour long course, I provide an overview of the multiple testing proble
 
 **Practical work (solutions)**
 <p>
-  <a href="practicals/PHDS_omics_multiplicity_2026_solutions.Rmd" download>Download (.Rmd)</a> |
-  <a href="practicals/PHDS_omics_multiplicity_2026_solutions.html" target="_blank" rel="noopener noreferrer">Open in new tab (.html)</a>
+  <a href="practicals/PHDS_omics_multiplicity_v2_2026_solutions.Rmd" download>Download (.Rmd)</a> |
+  <a href="practicals/PHDS_omics_multiplicity_v2_2026_solutions.html" target="_blank" rel="noopener noreferrer">Open in new tab (.html)</a>
 </p>
     
     

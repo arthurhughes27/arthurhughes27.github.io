@@ -9,6 +9,10 @@ links:
     url: "https://www.linkedin.com/in/arthur-hughes-4a63a6243?originalSubdomain=fr"
   - label: GitHub
     url: "https://github.com/arthurhughes27"
+  - label: ORCID
+    url: "https://orcid.org/0009-0001-5841-2580"
+  - label: Email
+    url: "mailto:arthur.hughes@u-bordeaux.fr"
 output:
   postcards::solana
 ---
@@ -39,3 +43,9 @@ MSc in Public Health Data Science | September 2022 - July 2023
 **University of Bath, United Kingdom** 
 
 Master of Mathematics | September 2018 - June 2022
+
+## Contact
+
+Email : [arthur.hughes@u-bordeaux.fr](mailto:arthur.hughes@u-bordeaux.fr)
+
+ORCID : [0009-0001-5841-2580](https://orcid.org/0009-0001-5841-2580)

@@ -8,6 +8,10 @@ output:
 
 Contributed oral presentation : *Evaluation of High-Dimensional Surrogate Markers with Applications to Vaccinology*
 
+<p>
+  <a href="slides/communications/oral_communication_IBC_Korea_2026.pdf" target="_blank" rel="noopener noreferrer">Slides</a>
+</p>
+
 <hr style="border:0; height:3px;
     background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.22), rgba(0,0,0,0.06));
     margin:1.5rem 0;">
@@ -71,7 +75,7 @@ Contributed poster presentation : *Rank-Based Identification of High-Dimensional
 Markers : Application to Vaccinology*
 
 <p>
-  <a href="slides/communications/poster_communication_EPICLIN_2025.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
+  <a href="slides/communications/poster_commnuication_EPICLIN_2025.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
 </p>
 
 <hr style="border:0; height:3px;
@@ -84,5 +88,5 @@ Markers : Application to Vaccinology*
 Contributed poster presentation : *A test for the comparison of gene-set transcriptomic profiles of vaccines*
 
 <p>
-  <a href="slides/communications/poster_communication_SMPGD_2025.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
+  <a href="slides/communications/poster_communication_SMPGD_2024.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
 </p>
