@@ -9,7 +9,7 @@ output:
 :::: {.entry}
 ### International Biometric Conference
 
-[Seoul, July 2026]{.meta}
+[Seoul, South Korea, July 2026]{.meta}
 
 Contributed oral presentation : *Evaluation of High-Dimensional Surrogate Markers with Applications to Vaccinology*
 
