@@ -77,3 +77,7 @@ Contributed poster presentation : *A test for the comparison of gene-set transcr
 
 [Poster](slides/communications/poster_communication_SMPGD_2024.pdf){.pill target="_blank" rel="noopener noreferrer"}
 ::::
+
+```{r theme-script, echo=FALSE, results='asis'}
+cat(readLines("includes/theme.html"), sep = "\n")
+```

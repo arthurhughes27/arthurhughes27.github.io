@@ -13,3 +13,7 @@ output:
 [This R package](https://cran.r-project.org/web/packages/SurrogateRank/index.html) implements nonparametric rank-based methods for the identification and evaluation of surrogate markers in a small sample setting. A tutorial [can be found here](https://htmlpreview.github.io/?https://github.com/laylaparast/SurrogateRank/blob/main/SurrogateRank_tutorial.html).
 :::
 ::::
+
+```{r theme-script, echo=FALSE, results='asis'}
+cat(readLines("includes/theme.html"), sep = "\n")
+```

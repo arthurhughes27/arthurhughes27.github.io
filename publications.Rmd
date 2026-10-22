@@ -17,3 +17,7 @@ Hughes, A., Thiébaut, R., Parast, L., and Hejblum, B.P.
 Hughes, A., Parast, L., Thiébaut, R., and Hejblum, B.P.  
 *Statistics in Medicine*, **44**(20–22), 2025.  
 [doi:10.1002/sim.70241](https://doi.org/10.1002/sim.70241)
+
+```{r theme-script, echo=FALSE, results='asis'}
+cat(readLines("includes/theme.html"), sep = "\n")
+```

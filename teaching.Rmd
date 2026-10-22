@@ -92,3 +92,7 @@ output:
 [Lecture Slides]{.resource-label} [Download (PDF)](slides/teaching/Core%20Principles%20of%20Epidemiology%20-%20DAGs%20%282025%29.pdf){.pill download=""} [Open in new tab](slides/teaching/Core%20Principles%20of%20Epidemiology%20-%20DAGs%20%282025%29.pdf){.pill target="_blank" rel="noopener noreferrer"}
 :::
 ::::
+
+```{r theme-script, echo=FALSE, results='asis'}
+cat(readLines("includes/theme.html"), sep = "\n")
+```
