@@ -3,6 +3,8 @@ title: "Arthur Hughes"
 image: "images/portrait.jpeg"
 site: distill::distill_website
 links:
+  - label: Curriculum Vitae
+    url: "internships/Curriculum_Vitae.pdf"
   - label: Google Scholar
     url: "https://scholar.google.com/citations?user=PSWWvJQAAAAJ&hl=en"
   - label: LinkedIn
@@ -17,21 +19,19 @@ output:
  
 ## Bio
 
-I am a PhD student in biostatistics at the University of Bordeaux, France. I work on new methodology for analysing high-dimensional biomolecular data in the context of vaccine experiments. My research interests include surrogate markers, causal inference, non-parametric statistics, prediction, and reproducibility problems. 
+I am a PhD student in biostatistics at the University of Bordeaux, France. I work on new methodology for analysing high-dimensional biomolecular data in the context of vaccine experiments. My research interests include surrogate markers, causal inference, nonparametric statistics, prediction, and reproducibility problems.
 
-As a researcher, I highly value clear and intuitive scientific communication, whether in my publications, conference communications, or teaching.  
-
-[Curriculum Vitae](internships/Curriculum_Vitae.pdf){.pill .pill-lg target="_blank" rel="noopener noreferrer"}
+As a researcher, I highly value clear and intuitive scientific communication, whether in my publications, conference communications, or teaching.
 
 ## Education
 
 :::: {.timeline-item}
 ::: {.timeline-main}
-**PhD in Public Health : Biostatistics**\
+**PhD in Public Health: Biostatistics**\
 University of Bordeaux, France
 :::
 ::: {.timeline-dates}
-October 2023 – November 2026 
+October 2023 – November 2026
 :::
 ::::
 
@@ -57,9 +57,9 @@ September 2018 – June 2022
 
 ## Contact
 
-Email : [arthur.hughes@u-bordeaux.fr](mailto:arthur.hughes@u-bordeaux.fr)
+Email: [arthur.hughes@u-bordeaux.fr](mailto:arthur.hughes@u-bordeaux.fr)
 
-<!-- # ORCID : [0009-0001-5841-2580](https://orcid.org/0009-0001-5841-2580) -->
+<!-- # ORCID: [0009-0001-5841-2580](https://orcid.org/0009-0001-5841-2580) -->
 
 ```{r site-includes, echo=FALSE, results='asis'}
 source("includes/site_includes.R"); site_includes()

@@ -230,6 +230,10 @@ a.pill.pill-lg { padding: 0.45rem 1.1rem; font-size: 1rem; }
 .entry > h2, .entry > h3, .entry > h4 { margin-top: 0; font-size: 1.05rem; }
 .entry .meta { display: block; margin-bottom: 0.75rem; color: var(--muted); font-family: var(--font-mono); font-size: 0.85rem; }
 
+/* short remark inside a card (e.g. the private-data note on the genomics courses) */
+.entry .note p { margin: 0.25rem 0 0.9rem; color: var(--muted); font-size: 0.9rem; }
+.entry .note strong { color: var(--ink); }
+
 /* Teaching: one row per resource, label then pill links; .pill-row is a bare row of pills */
 .resource { margin: 0.4rem 0; }
 .resource p, .pill-row p { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0; }

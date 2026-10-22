@@ -27,11 +27,11 @@ output:
 ::::
 
 :::: {.entry}
-### Société Française de Statistique - Journées de Statistique
+### Société Française de Statistique – Journées de Statistique
 
 [Marseille, France, June 2025]{.meta}
 
-*Rank-Based Identification of High-Dimensional Surrogate Markers : Application to Vaccinology*
+*Rank-Based Identification of High-Dimensional Surrogate Markers: Application to Vaccinology*
 
 [Slides](slides/communications/oral_communication_JDS_2024.pdf){.pill target="_blank" rel="noopener noreferrer"}
 ::::
@@ -47,11 +47,11 @@ output:
 ::::
 
 :::: {.entry}
-### Rank-Based Identification of Surrogates in Small Ebola Studies workshop
+### Rank-Based Identification of Surrogates in Small Ebola Studies Workshop
 
 [Austin, USA, June 2024]{.meta}
 
-*Evaluating High-dimensional Surrogate Markers of Vaccine Response through Causal Mediation Analysis*
+*Evaluating High-Dimensional Surrogate Markers of Vaccine Response through Causal Mediation Analysis*
 
 [Slides](slides/communications/oral_communication_Austin_2024.pdf){.pill target="_blank" rel="noopener noreferrer"}
 ::::
@@ -59,11 +59,11 @@ output:
 ## Poster presentations
 
 :::: {.entry}
-### Conférence Francophone d'Epidémiologie Clinique (EPICLIN) Conference
+### Conférence Francophone d'Épidémiologie Clinique (EPICLIN)
 
 [Bordeaux, France, May 2025]{.meta}
 
-*Rank-Based Identification of High-Dimensional Surrogate Markers : Application to Vaccinology*
+*Rank-Based Identification of High-Dimensional Surrogate Markers: Application to Vaccinology*
 
 [Poster](slides/communications/poster_commnuication_EPICLIN_2025.pdf){.pill target="_blank" rel="noopener noreferrer"}
 ::::
