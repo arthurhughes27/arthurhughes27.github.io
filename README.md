@@ -17,7 +17,7 @@ GitHub Pages serves the rendered site from the `docs/` folder.
 | Path | Purpose |
 |---|---|
 | `index.Rmd`, `teaching.Rmd`, `publications.Rmd`, `software.Rmd`, `communications.Rmd`, `jobs.Rmd` | one page each (the home page is `index.Rmd`; `blog.Rmd` is built but hidden from the navbar) |
-| `_site.yml` | site title, navbar, search (off) and theme |
+| `_site.yml` | site title, navbar (the search box is turned off here with `navbar: search: false`) and theme |
 | `postcards.css` | the whole theme: colour tokens (light and dark), fonts, components, motion |
 | `includes/` | `theme.html` (dark-mode toggle and active nav item), `footer.html`, `site_includes.R` (emits both at the end of every page), `helpers.R` (link rows on the Teaching page), `head.html` (meta description) |
 | `slides/`, `practicals/`, `publications/`, `internships/`, `images/` | files the pages link to |
@@ -30,6 +30,7 @@ Pages use a few small building blocks; copy an existing one.
 
 - **Card** (course, talk, offer, publication): a fenced div, `:::: {.entry}` ... `::::`, with a heading
   and, optionally, `[Seoul, July 2026]{.meta}` for the line under the title.
+- **Short remark inside a card** (for example the private-data note on the genomics courses): `::: {.note}` ... `:::`.
 - **Link button**: `[Slides](slides/communications/file.pdf){.pill target="_blank" rel="noopener noreferrer"}`.
 - **Teaching**: inside a course card use `slides("slides/teaching/file.pdf")` and
   `practical("Practical work (questions)", "file_stem")` in a `results='asis'` chunk
@@ -38,6 +39,7 @@ Pages use a few small building blocks; copy an existing one.
   keep each group ordered from most to least recent.
 - **New publication**: add the PDF to `publications/` and a card at the top of `publications.Rmd`.
 - **New package**: add a `.software-item` block to `software.Rmd` with its hex sticker in `images/`.
+- **Home page buttons** (Curriculum Vitae, Google Scholar, ...): the `links:` list in the front matter of `index.Rmd`.
 
 ### File names
 

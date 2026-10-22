@@ -728,321 +728,287 @@ src: url(data:font/ttf;base64,AAEAAAAOAIAAAwBgR1NVQpMNggIAAAFAAAAANE9TLzKY48FUAA
 }
 
 :root {
-color-scheme: light dark;
---paper: #f5f2ea;
---ink: #14213d;
---header: #14213d;
---accent: #1d4e89; 
---link-hover: #14213d;
---accent-2: #d98e04; 
---muted: #4f5b73;
---card-bg: rgba(255,255,255,0.6);
---card-border: rgba(20,33,61,0.12);
---pill-hover-bg: #14213d;
---pill-hover-fg: #f5f2ea;
---body-font: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif; 
---font-mono: 'Roboto Mono', monospace;
---heading-font: 'Roboto Mono', monospace; 
---navbar-font: 'Roboto Mono', monospace; 
+  color-scheme: light dark;
+  --paper: #f5f2ea;
+  --ink: #14213d;
+  --header: #14213d;
+  --accent: #1d4e89;            
+  --link-hover: #14213d;
+  --accent-2: #d98e04;          
+  --muted: #4f5b73;
+  --card-bg: rgba(255,255,255,0.6);
+  --card-border: rgba(20,33,61,0.12);
+  --pill-hover-bg: #14213d;
+  --pill-hover-fg: #f5f2ea;
+  --body-font: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;   
+  --font-mono: 'Roboto Mono', monospace;
+  --heading-font: 'Roboto Mono', monospace;   
+  --navbar-font: 'Roboto Mono', monospace;    
 }
 @supports (color: light-dark(black, white)) {
-:root {
---paper: light-dark(#f5f2ea, #0f1626);
---ink: light-dark(#14213d, #e8e6df);
---header: light-dark(#14213d, #0a0f1c);
---accent: light-dark(#1d4e89, #8fb8f0);
---link-hover: light-dark(#14213d, #f0b429);
---accent-2: light-dark(#d98e04, #f0b429);
---muted: light-dark(#4f5b73, #9aa6bd);
---card-bg: light-dark(rgba(255,255,255,0.6), rgba(255,255,255,0.05));
---card-border: light-dark(rgba(20,33,61,0.12), rgba(255,255,255,0.12));
---pill-hover-bg: light-dark(#14213d, #f0b429);
---pill-hover-fg: light-dark(#f5f2ea, #0f1626);
-}
+  :root {
+    --paper: light-dark(#f5f2ea, #0f1626);
+    --ink: light-dark(#14213d, #e8e6df);
+    --header: light-dark(#14213d, #0a0f1c);
+    --accent: light-dark(#1d4e89, #8fb8f0);
+    --link-hover: light-dark(#14213d, #f0b429);
+    --accent-2: light-dark(#d98e04, #f0b429);
+    --muted: light-dark(#4f5b73, #9aa6bd);
+    --card-bg: light-dark(rgba(255,255,255,0.6), rgba(255,255,255,0.05));
+    --card-border: light-dark(rgba(20,33,61,0.12), rgba(255,255,255,0.12));
+    --pill-hover-bg: light-dark(#14213d, #f0b429);
+    --pill-hover-fg: light-dark(#f5f2ea, #0f1626);
+  }
 }
 :root[data-theme="light"] { color-scheme: light; }
 :root[data-theme="dark"] { color-scheme: dark; }
 
 html, body {
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-background-color: var(--paper);
-color: var(--ink);
-line-height: 1.65;
-margin: 0;
-padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--paper);
+  color: var(--ink);
+  line-height: 1.65;
+  margin: 0;
+  padding: 0;
 }
 body { font-size: 1.05rem; }
 
 p, li { max-width: 72ch; }
 
 .btn, button, input, .list-group-item { font-family: var(--font-mono); }
+
 a, a:visited {
-color: var(--accent);
-text-decoration: underline;
-text-decoration-thickness: 1px;
-text-underline-offset: 0.18em;
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 a:hover {
-color: var(--link-hover);
-text-decoration-thickness: 2px;
+  color: var(--link-hover);
+  text-decoration-thickness: 2px;
 }
 a:focus-visible, button:focus-visible, input:focus-visible {
-outline: 3px solid var(--accent);
-outline-offset: 2px;
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
 }
-h1, h2, h3, h4, h5, h6 { color: var(--ink); } 
+
+h1, h2, h3, h4, h5, h6 { color: var(--ink); }   
 h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em; }
 h2 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.01em; margin-top: 2.25rem; margin-bottom: 0.75rem; }
 h3 { font-size: 1.2rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; }
 h4 { font-size: 1.05rem; font-weight: 700; margin-top: 1.25rem; margin-bottom: 0.5rem; }
 .section.level2:first-child > h2 { margin-top: 0; }
-/* ============================================================
-3. HEADER AND NAVIGATION
-(the nav element is <nav class="distill-site-nav distill-site-header">)
-             ============================================================ */
-          .distill-site-nav.distill-site-header {
-            background-color: var(--header);
-            color: #fff;
-            padding-top: 0.45rem;
-            padding-bottom: 0.45rem;
-          }
-          .distill-site-header a,
-          .distill-site-header a:visited {
-            color: #fff;
-            font-weight: 400;
-            letter-spacing: -0.01em;
-          }
-          .distill-site-header a.nav-toggle { font-size: 1.6rem; line-height: 1; }
-          .distill-site-header a.theme-toggle { cursor: pointer; text-decoration: none; font-size: 1.1rem; line-height: 1; }
 
-          /* the current page is marked by includes/theme.html */
-          .distill-site-header .nav-right a[aria-current="page"] {
-            text-decoration: underline var(--accent-2) 2px;
-            text-underline-offset: 0.45em;
-          }
+.distill-site-nav.distill-site-header {
+  background-color: var(--header);
+  color: #fff;
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+}
+.distill-site-header a,
+.distill-site-header a:visited {
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.distill-site-header a.nav-toggle { font-size: 1.6rem; line-height: 1; }
+.distill-site-header a.theme-toggle { cursor: pointer; text-decoration: none; font-size: 1.1rem; line-height: 1; }
 
-          /* ============================================================
-             4. PAGE TITLE BLOCK AND HERO BUTTONS
-             ============================================================ */
-          /* amber bar under page titles; the inline widths come from the template */
-          .container hr {
-            width: 3rem !important;
-            max-width: 3rem !important;
-            height: 0;
-            margin: 0.6rem 0 1.25rem;
-            border: 0;
-            border-top: 3px solid var(--accent-2);
-            opacity: 1;
-          }
-          .d-lg-none hr { margin-left: auto; margin-right: auto; }   /* mobile hero is centred */
+.distill-site-header .nav-right a[aria-current="page"] {
+  text-decoration: underline var(--accent-2) 2px;
+  text-underline-offset: 0.45em;
+}
 
-          /* subpages have no portrait: hide the empty <img> that left a 15rem gap
-             under the title and let the title use the full width */
-          img[src=""] { display: none; }
-          .row:has(img[src=""]) > .col-7 { flex: 0 0 100%; max-width: 100%; }
-          /* mobile: the empty image block doubled as spacing under the fixed header
-             (Bootstrap's p-3/mt-3 utilities are !important) */
-          .d-lg-none .p-3:has(> img[src=""]) { height: 5.5rem; margin: 0 !important; padding: 0 !important; }
-          /* and drop the empty button list under the title */
-          #icon-list:not(:has(li)),
-          .list-group:not(:has(a)) { display: none; }
+.container hr {
+  width: 3rem !important;
+  max-width: 3rem !important;
+  height: 0;
+  margin: 0.6rem 0 1.25rem;
+  border: 0;
+  border-top: 3px solid var(--accent-2);
+  opacity: 1;
+}
+.d-lg-none hr { margin-left: auto; margin-right: auto; }   
 
-          /* desktop social buttons */
-          #icon-list .list-inline-item { margin-right: 0.25rem; }
-          #icon-list a, .list-group a { text-decoration: none; }
-          #icon-list .btn {
-            display: inline-block;
-            padding: 0.45rem 0.8rem;
-            margin: 0 0 0.4rem;
-            border: 1px solid var(--ink);
-            border-radius: 0.35rem;
-            background-color: transparent;
-            color: var(--ink);
-            font-weight: 500;
-            text-decoration: none;
-            cursor: pointer;
-            transition: transform .12s ease, background-color .12s ease, color .12s ease, opacity .12s ease;
-          }
-          #icon-list .btn:hover {
-            transform: translateY(-2px);
-            opacity: 0.95;
-            background-color: var(--pill-hover-bg);
-            border-color: var(--pill-hover-bg);
-            color: var(--pill-hover-fg);
-          }
-          /* mobile social buttons carry inline colours from the template */
-          .list-group-item {
-            background-color: transparent !important;
-            color: var(--ink) !important;
-            border-color: var(--ink) !important;
-          }
-          .list-group-item:hover {
-            background-color: var(--pill-hover-bg) !important;
-            color: var(--pill-hover-fg) !important;
-            border-color: var(--pill-hover-bg) !important;
-          }
+img[src=""] { display: none; }
+.row:has(img[src=""]) > .col-7 { flex: 0 0 100%; max-width: 100%; }
 
-          /* ============================================================
-             5. COMPONENTS
-             ============================================================ */
-          /* Pill link buttons (downloads, slides, CV) */
-          a.pill, a.pill:visited {
-            display: inline-block;
-            padding: 0.3rem 0.8rem;
-            border: 1px solid var(--ink);
-            border-radius: 0.35rem;
-            color: var(--ink);
-            font-family: var(--font-mono);
-            font-size: 0.85rem;
-            font-weight: 500;
-            line-height: 1.4;
-            text-decoration: none;
-            transition: background-color .12s ease, color .12s ease, transform .12s ease;
-          }
-          a.pill:hover {
-            background-color: var(--pill-hover-bg);
-            border-color: var(--pill-hover-bg);
-            color: var(--pill-hover-fg);
-            transform: translateY(-1px);
-          }
-          a.pill.pill-lg { padding: 0.45rem 1.1rem; font-size: 1rem; }
+.d-lg-none .p-3:has(> img[src=""]) { height: 5.5rem; margin: 0 !important; padding: 0 !important; }
 
-          /* Cards: courses, talks, internship offers, publications (title is an h2, h3 or h4) */
-          .entry {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-left: 4px solid var(--accent-2);
-            border-radius: 0.5rem;
-            padding: 1.1rem 1.4rem 0.9rem;
-            margin: 0 0 1.25rem;
-          }
-          .entry > h2, .entry > h3, .entry > h4 { margin-top: 0; font-size: 1.05rem; }
-          .entry .meta { display: block; margin-bottom: 0.75rem; color: var(--muted); font-family: var(--font-mono); font-size: 0.85rem; }
+#icon-list:not(:has(li)),
+.list-group:not(:has(a)) { display: none; }
 
-          /* Teaching: one row per resource, label then pill links; .pill-row is a bare row of pills */
-          .resource { margin: 0.4rem 0; }
-          .resource p, .pill-row p { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0; }
-          .resource-label { flex: 0 0 15rem; font-family: var(--font-mono); font-weight: 700; font-size: 0.9rem; }
+#icon-list .list-inline-item { margin-right: 0.25rem; }
+#icon-list a, .list-group a { text-decoration: none; }
+#icon-list .btn {
+  display: inline-block;
+  padding: 0.45rem 0.8rem;
+  margin: 0 0 0.4rem;
+  border: 1px solid var(--ink);
+  border-radius: 0.35rem;
+  background-color: transparent;
+  color: var(--ink);
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .12s ease, background-color .12s ease, color .12s ease, opacity .12s ease;
+}
+#icon-list .btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+  background-color: var(--pill-hover-bg);
+  border-color: var(--pill-hover-bg);
+  color: var(--pill-hover-fg);
+}
 
-          /* Home: education timeline */
-          .timeline-item {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 0.15rem 1.5rem;
-            padding: 0.75rem 0;
-            border-top: 1px solid var(--card-border);
-          }
-          .timeline-main p, .timeline-dates p { margin: 0; }
-          .timeline-dates { color: var(--muted); font-family: var(--font-mono); font-size: 0.85rem; }
+.list-group-item {
+  background-color: transparent !important;
+  color: var(--ink) !important;
+  border-color: var(--ink) !important;
+}
+.list-group-item:hover {
+  background-color: var(--pill-hover-bg) !important;
+  color: var(--pill-hover-fg) !important;
+  border-color: var(--pill-hover-bg) !important;
+}
 
-          /* Software: logo beside text, stacked on narrow screens */
-          .software-item { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.25rem; margin-bottom: 1.25rem; }
-          .software-item img { width: 10rem; max-width: 100%; height: auto; }
-          .software-text { flex: 1 1 16rem; min-width: 0; }
-          .software-text > h3 { margin-top: 0; }
+a.pill, a.pill:visited {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--ink);
+  border-radius: 0.35rem;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: background-color .12s ease, color .12s ease, transform .12s ease;
+}
+a.pill:hover {
+  background-color: var(--pill-hover-bg);
+  border-color: var(--pill-hover-bg);
+  color: var(--pill-hover-fg);
+  transform: translateY(-1px);
+}
+a.pill.pill-lg { padding: 0.45rem 1.1rem; font-size: 1rem; }
 
-          @media (max-width: 576px) {
-            .resource-label { flex-basis: 100%; }
-            .entry { padding: 1rem 1rem 0.75rem; }
-          }
+.entry {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-left: 4px solid var(--accent-2);
+  border-radius: 0.5rem;
+  padding: 1.1rem 1.4rem 0.9rem;
+  margin: 0 0 1.25rem;
+}
+.entry > h2, .entry > h3, .entry > h4 { margin-top: 0; font-size: 1.05rem; }
+.entry .meta { display: block; margin-bottom: 0.75rem; color: var(--muted); font-family: var(--font-mono); font-size: 0.85rem; }
 
-          /* ============================================================
-             6. FOOTER (includes/footer.html, emitted at the end of each page)
-             ============================================================ */
-          .site-footer {
-            margin-top: 3rem;
-            padding: 1.25rem 0 2rem;
-            border-top: 1px solid var(--card-border);
-            color: var(--muted);
-            font-size: 0.85rem;
-          }
-          .site-footer p { max-width: none; margin: 0 0 0.35rem; }
-          .site-footer-name { color: var(--ink); font-family: var(--font-mono); font-weight: 700; }
-          .site-footer-links a { margin-right: 1.1rem; font-family: var(--font-mono); }
-          .site-footer-meta a { font-family: var(--font-mono); }
+.entry .note p { margin: 0.25rem 0 0.9rem; color: var(--muted); font-size: 0.9rem; }
+.entry .note strong { color: var(--ink); }
 
-          /* ============================================================
-             7. LAYOUT: wider column on large screens (cards stay single-column)
-             ============================================================ */
-          @media screen and (min-width: 768px) {
-            .container { width: 768px; max-width: 100%; }
-          }
-          @media (min-width: 992px) {
-            .container { width: 900px; max-width: 100%; }
-          }
+.resource { margin: 0.4rem 0; }
+.resource p, .pill-row p { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0; }
+.resource-label { flex: 0 0 15rem; font-family: var(--font-mono); font-weight: 700; font-size: 0.9rem; }
 
-          /* ============================================================
-             8. MOTION, PRINT AND REDUCED MOTION
-             ============================================================ */
-          /* cross-fade between pages; the header gets its own layer so it stays put */
-          @view-transition { navigation: auto; }
-          header.header { view-transition-name: site-header; }
+.timeline-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.15rem 1.5rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--card-border);
+}
+.timeline-main p, .timeline-dates p { margin: 0; }
+.timeline-dates { color: var(--muted); font-family: var(--font-mono); font-size: 0.85rem; }
 
-          @media (prefers-reduced-motion: no-preference) {
-            html { scroll-behavior: smooth; }
+.software-item { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.25rem; margin-bottom: 1.25rem; }
+.software-item img { width: 10rem; max-width: 100%; height: auto; }
+.software-text { flex: 1 1 16rem; min-width: 0; }
+.software-text > h3 { margin-top: 0; }
 
-            /* cards lift slightly on hover */
-            .entry { transition: transform .2s ease, box-shadow .2s ease; }
-            .entry:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(20,33,61,0.10); }
+@media (max-width: 576px) {
+  .resource-label { flex-basis: 100%; }
+  .entry { padding: 1rem 1rem 0.75rem; }
+}
 
-            /* amber bar slides in under links on hover */
-            .container p a:not(.pill),
-            .container li a:not(.pill),
-            .site-footer a,
-            .distill-site-header .nav-right a:not(.theme-toggle):not(.nav-toggle) {
-              background: linear-gradient(var(--accent-2), var(--accent-2)) 0 100% / 0 2px no-repeat;
-              transition: background-size .25s ease, color .15s ease;
-            }
-            .container p a:not(.pill):hover,
-            .container li a:not(.pill):hover,
-            .site-footer a:hover,
-            .distill-site-header .nav-right a:not(.theme-toggle):not(.nav-toggle):hover {
-              background-size: 100% 2px;
-            }
+.site-footer {
+  margin-top: 3rem;
+  padding: 1.25rem 0 2rem;
+  border-top: 1px solid var(--card-border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.site-footer p { max-width: none; margin: 0 0 0.35rem; }
+.site-footer-name { color: var(--ink); font-family: var(--font-mono); font-weight: 700; }
+.site-footer-links a { margin-right: 1.1rem; font-family: var(--font-mono); }
+.site-footer-meta a { font-family: var(--font-mono); }
 
-            /* colours fade when the theme is toggled (!important: beats the component transitions above) */
-            .theme-fade, .theme-fade * {
-              transition: background-color .3s ease, color .3s ease, border-color .3s ease !important;
-            }
-          }
+@media screen and (min-width: 768px) {
+  .container { width: 768px; max-width: 100%; }
+}
+@media (min-width: 992px) {
+  .container { width: 900px; max-width: 100%; }
+}
 
-          /* cards and timeline rows fade in as they scroll into view
-             (scroll-driven animation: browsers without support just show them) */
-          @keyframes reveal {
-            from { opacity: 0; translate: 0 14px; }
-            to   { opacity: 1; translate: 0 0; }
-          }
-          @media (prefers-reduced-motion: no-preference) {
-            @supports (animation-timeline: view()) {
-              .entry, .timeline-item, .software-item {
-                animation: reveal linear both;
-                animation-timeline: view();
-                animation-range: entry 0% entry 35%;
-              }
-            }
-          }
+@view-transition { navigation: auto; }
+header.header { view-transition-name: site-header; }
 
-          /* printing and static captures never scroll, so show everything */
-          @media print {
-            .entry, .timeline-item, .software-item { animation: none; }
-          }
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
 
-          @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after { transition: none !important; animation: none !important; }
-            ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
-          }
+  .entry { transition: transform .2s ease, box-shadow .2s ease; }
+  .entry:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(20,33,61,0.10); }
 
-          /* ============================================================
-             9. BLOG (hidden from the navbar; the listing page is still built)
-             ============================================================ */
-          .blog-intro {
-            margin-top: 4rem;      /* space from header */
-            margin-bottom: -3rem;  /* space before post listing */
-            padding: 0;
-            background: transparent;
-          }</style>
+  .container p a:not(.pill),
+  .container li a:not(.pill),
+  .site-footer a,
+  .distill-site-header .nav-right a:not(.theme-toggle):not(.nav-toggle) {
+    background: linear-gradient(var(--accent-2), var(--accent-2)) 0 100% / 0 2px no-repeat;
+    transition: background-size .25s ease, color .15s ease;
+  }
+  .container p a:not(.pill):hover,
+  .container li a:not(.pill):hover,
+  .site-footer a:hover,
+  .distill-site-header .nav-right a:not(.theme-toggle):not(.nav-toggle):hover {
+    background-size: 100% 2px;
+  }
+
+  .theme-fade, .theme-fade * {
+    transition: background-color .3s ease, color .3s ease, border-color .3s ease !important;
+  }
+}
+
+@keyframes reveal {
+  from { opacity: 0; translate: 0 14px; }
+  to   { opacity: 1; translate: 0 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .entry, .timeline-item, .software-item {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 35%;
+    }
+  }
+}
+
+@media print {
+  .entry, .timeline-item, .software-item { animation: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+}
+
+.blog-intro {
+  margin-top: 4rem;      
+  margin-bottom: -3rem;  
+  padding: 0;
+  background: transparent;
+}</style>
           <style type="text/css">
 
 
@@ -1210,7 +1176,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
           <nav class="distill-site-nav distill-site-header">
           <div class="nav-left">
           <a href="index.html" class="title">Arthur Hughes</a>
-          <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."></input>
           </div>
           <div class="nav-right">
           <a href="index.html">Home</a>
@@ -1244,124 +1209,106 @@ document.addEventListener('DOMContentLoaded', function(e) {
       </div>
       <div class="row mb-5">
         <div class="col">
-          <div id="oral-presentations" class="section level2">
-          <h2>Oral presentations</h2>
-          <div id="international-biometric-conference" class="section level3 entry">
-          <h3>International Biometric Conference</h3>
-          <p><span class="meta">Seoul, South Korea, July 2026</span></p>
-          <p><em>Evaluation of High-Dimensional Surrogate Markers with
-          Applications to Vaccinology</em></p>
-          <p><a href="slides/communications/oral_communication_IBC_Korea_2026.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
-          </div>
-          <div id="biostatistics-seminar-university-of-bordeaux" class="section level3 entry">
-          <h3>Biostatistics Seminar, University of Bordeaux</h3>
-          <p><span class="meta">Bordeaux, France, March 2026</span></p>
-          <p><em>RISE-Meta: Meta-analytic Evaluation of High-Dimensional
-          Trial-Level Surrogates Applied to Vaccinology</em></p>
-          <p><a href="slides/communications/oral_communication_Bordeaux_2026.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
-          </div>
-          <div id="société-française-de-statistique---journées-de-statistique" class="section level3 entry">
-          <h3>Société Française de Statistique - Journées de
-          Statistique</h3>
-          <p><span class="meta">Marseille, France, June 2025</span></p>
-          <p><em>Rank-Based Identification of High-Dimensional Surrogate
-          Markers : Application to Vaccinology</em></p>
-          <p><a href="slides/communications/oral_communication_JDS_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
-          </div>
-          <div id="international-society-for-clinical-biostatistics-conference" class="section level3 entry">
-          <h3>International Society for Clinical Biostatistics
-          Conference</h3>
-          <p><span class="meta">Thessaloniki, Greece, July
-          2024</span></p>
-          <p><em>A variance-component score test for the comparison of
-          gene-set transcriptomic profiles of vaccines</em></p>
-          <p><a href="slides/communications/oral_communication_ISCB_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
-          </div>
-          <div id="rank-based-identification-of-surrogates-in-small-ebola-studies-workshop" class="section level3 entry">
-          <h3>Rank-Based Identification of Surrogates in Small Ebola
-          Studies workshop</h3>
-          <p><span class="meta">Austin, USA, June 2024</span></p>
-          <p><em>Evaluating High-dimensional Surrogate Markers of
-          Vaccine Response through Causal Mediation Analysis</em></p>
-          <p><a href="slides/communications/oral_communication_Austin_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
-          </div>
-          </div>
-          <div id="poster-presentations" class="section level2">
-          <h2>Poster presentations</h2>
-          <div id="conférence-francophone-depidémiologie-clinique-epiclin-conference" class="section level3 entry">
-          <h3>Conférence Francophone d’Epidémiologie Clinique (EPICLIN)
-          Conference</h3>
-          <p><span class="meta">Bordeaux, France, May 2025</span></p>
-          <p><em>Rank-Based Identification of High-Dimensional Surrogate
-          Markers : Application to Vaccinology</em></p>
-          <p><a href="slides/communications/poster_commnuication_EPICLIN_2025.pdf" class="pill" target="_blank" rel="noopener noreferrer">Poster</a></p>
-          </div>
-          <div id="statistical-methods-for-post-genomic-data-smpgd-conference" class="section level3 entry">
-          <h3>Statistical Methods for Post-Genomic Data (SMPGD)
-          Conference</h3>
-          <p><span class="meta">Paris, France, January 2024</span></p>
-          <p><em>A test for the comparison of gene-set transcriptomic
-          profiles of vaccines</em></p>
-          <p><a href="slides/communications/poster_communication_SMPGD_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Poster</a></p>
-          </div>
-          <footer class="site-footer">
-          <p class="site-footer-name">
-          © 2026 Arthur Hughes
-          </p>
-          <p class="site-footer-links">
-          <a href="mailto:arthur.hughes@u-bordeaux.fr">Email</a>
-          <a href="https://orcid.org/0009-0001-5841-2580">ORCID</a>
-          <a href="https://github.com/arthurhughes27">GitHub</a>
-          <a href="https://scholar.google.com/citations?user=PSWWvJQAAAAJ&amp;hl=en">Google
-          Scholar</a>
-          <a href="https://www.linkedin.com/in/arthur-hughes-4a63a6243?originalSubdomain=fr">LinkedIn</a>
-          </p>
-          <p class="site-footer-meta">
-          Last updated 2026-10-22 · <a href="#">Back to top ↑</a>
-          </p>
-          </footer>
-          <script>
-          (function () {
-            var root = document.documentElement;
-            try { var saved = localStorage.getItem('theme'); if (saved) { root.setAttribute('data-theme', saved); } } catch (e) {}
-            function isDark() {
-              var t = root.getAttribute('data-theme');
-              return t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-            }
-            function init() {
-              if (window.__themeInit) { return; }
-              window.__themeInit = true;
-              var links = document.querySelectorAll('.distill-site-header .nav-right a');
-              var here = location.pathname.split('/').pop() || 'index.html';
-              for (var i = 0; i < links.length; i++) {
-                if (links[i].getAttribute('href') === here) { links[i].setAttribute('aria-current', 'page'); }
-              }
-              var nav = document.querySelector('.distill-site-header .nav-right');
-              if (!nav) { return; }
-              var btn = document.createElement('a');
-              btn.href = 'javascript:void(0);';
-              btn.className = 'theme-toggle';
-              function paint() {
-                btn.textContent = isDark() ? '☀' : '☾';
-                var label = isDark() ? 'Switch to light theme' : 'Switch to dark theme';
-                btn.setAttribute('aria-label', label);
-                btn.setAttribute('title', label);
-              }
-              btn.addEventListener('click', function () {
-                var next = isDark() ? 'light' : 'dark';
-                root.classList.add('theme-fade');
-                root.setAttribute('data-theme', next);
-                try { localStorage.setItem('theme', next); } catch (e) {}
-                paint();
-                setTimeout(function () { root.classList.remove('theme-fade'); }, 400);
-              });
-              paint();
-              nav.insertBefore(btn, nav.querySelector('.nav-toggle'));
-            }
-            if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
-          })();
-          </script>
-          </div>
+<div id="oral-presentations" class="section level2">
+<h2>Oral presentations</h2>
+<div id="international-biometric-conference" class="section level3 entry">
+<h3>International Biometric Conference</h3>
+<p><span class="meta">Seoul, South Korea, July 2026</span></p>
+<p><em>Evaluation of High-Dimensional Surrogate Markers with Applications to Vaccinology</em></p>
+<p><a href="slides/communications/oral_communication_IBC_Korea_2026.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
+</div>
+<div id="biostatistics-seminar-university-of-bordeaux" class="section level3 entry">
+<h3>Biostatistics Seminar, University of Bordeaux</h3>
+<p><span class="meta">Bordeaux, France, March 2026</span></p>
+<p><em>RISE-Meta: Meta-analytic Evaluation of High-Dimensional Trial-Level Surrogates Applied to Vaccinology</em></p>
+<p><a href="slides/communications/oral_communication_Bordeaux_2026.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
+</div>
+<div id="société-française-de-statistique-journées-de-statistique" class="section level3 entry">
+<h3>Société Française de Statistique – Journées de Statistique</h3>
+<p><span class="meta">Marseille, France, June 2025</span></p>
+<p><em>Rank-Based Identification of High-Dimensional Surrogate Markers: Application to Vaccinology</em></p>
+<p><a href="slides/communications/oral_communication_JDS_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
+</div>
+<div id="international-society-for-clinical-biostatistics-conference" class="section level3 entry">
+<h3>International Society for Clinical Biostatistics Conference</h3>
+<p><span class="meta">Thessaloniki, Greece, July 2024</span></p>
+<p><em>A variance-component score test for the comparison of gene-set transcriptomic profiles of vaccines</em></p>
+<p><a href="slides/communications/oral_communication_ISCB_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
+</div>
+<div id="rank-based-identification-of-surrogates-in-small-ebola-studies-workshop" class="section level3 entry">
+<h3>Rank-Based Identification of Surrogates in Small Ebola Studies Workshop</h3>
+<p><span class="meta">Austin, USA, June 2024</span></p>
+<p><em>Evaluating High-Dimensional Surrogate Markers of Vaccine Response through Causal Mediation Analysis</em></p>
+<p><a href="slides/communications/oral_communication_Austin_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
+</div>
+</div>
+<div id="poster-presentations" class="section level2">
+<h2>Poster presentations</h2>
+<div id="conférence-francophone-dépidémiologie-clinique-epiclin" class="section level3 entry">
+<h3>Conférence Francophone d’Épidémiologie Clinique (EPICLIN)</h3>
+<p><span class="meta">Bordeaux, France, May 2025</span></p>
+<p><em>Rank-Based Identification of High-Dimensional Surrogate Markers: Application to Vaccinology</em></p>
+<p><a href="slides/communications/poster_commnuication_EPICLIN_2025.pdf" class="pill" target="_blank" rel="noopener noreferrer">Poster</a></p>
+</div>
+<div id="statistical-methods-for-post-genomic-data-smpgd-conference" class="section level3 entry">
+<h3>Statistical Methods for Post-Genomic Data (SMPGD) Conference</h3>
+<p><span class="meta">Paris, France, January 2024</span></p>
+<p><em>A test for the comparison of gene-set transcriptomic profiles of vaccines</em></p>
+<p><a href="slides/communications/poster_communication_SMPGD_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Poster</a></p>
+</div>
+<footer class="site-footer">
+<p class="site-footer-name">
+© 2026 Arthur Hughes
+</p>
+<p class="site-footer-links">
+<a href="mailto:arthur.hughes@u-bordeaux.fr">Email</a> <a href="https://orcid.org/0009-0001-5841-2580">ORCID</a> <a href="https://github.com/arthurhughes27">GitHub</a> <a href="https://scholar.google.com/citations?user=PSWWvJQAAAAJ&amp;hl=en">Google Scholar</a> <a href="https://www.linkedin.com/in/arthur-hughes-4a63a6243?originalSubdomain=fr">LinkedIn</a>
+</p>
+<p class="site-footer-meta">
+Last updated 2026-10-22 · <a href="#">Back to top ↑</a>
+</p>
+</footer>
+<script>
+(function () {
+  var root = document.documentElement;
+  try { var saved = localStorage.getItem('theme'); if (saved) { root.setAttribute('data-theme', saved); } } catch (e) {}
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    return t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function init() {
+    if (window.__themeInit) { return; }
+    window.__themeInit = true;
+    var links = document.querySelectorAll('.distill-site-header .nav-right a');
+    var here = location.pathname.split('/').pop() || 'index.html';
+    for (var i = 0; i < links.length; i++) {
+      if (links[i].getAttribute('href') === here) { links[i].setAttribute('aria-current', 'page'); }
+    }
+    var nav = document.querySelector('.distill-site-header .nav-right');
+    if (!nav) { return; }
+    var btn = document.createElement('a');
+    btn.href = 'javascript:void(0);';
+    btn.className = 'theme-toggle';
+    function paint() {
+      btn.textContent = isDark() ? '☀' : '☾';
+      var label = isDark() ? 'Switch to light theme' : 'Switch to dark theme';
+      btn.setAttribute('aria-label', label);
+      btn.setAttribute('title', label);
+    }
+    btn.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.classList.add('theme-fade');
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      paint();
+      setTimeout(function () { root.classList.remove('theme-fade'); }, 400);
+    });
+    paint();
+    nav.insertBefore(btn, nav.querySelector('.nav-toggle'));
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
+})();
+</script>
+</div>
         </div>
       </div>
     </div>
@@ -1385,131 +1332,106 @@ document.addEventListener('DOMContentLoaded', function(e) {
               </div>
             </div>
             <div class="mt-4 mb-5 mx-2">
-              <div id="oral-presentations" class="section level2">
-              <h2>Oral presentations</h2>
-              <div id="international-biometric-conference" class="section level3 entry">
-              <h3>International Biometric Conference</h3>
-              <p><span class="meta">Seoul, South Korea, July
-              2026</span></p>
-              <p><em>Evaluation of High-Dimensional Surrogate Markers
-              with Applications to Vaccinology</em></p>
-              <p><a href="slides/communications/oral_communication_IBC_Korea_2026.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
-              </div>
-              <div id="biostatistics-seminar-university-of-bordeaux" class="section level3 entry">
-              <h3>Biostatistics Seminar, University of Bordeaux</h3>
-              <p><span class="meta">Bordeaux, France, March
-              2026</span></p>
-              <p><em>RISE-Meta: Meta-analytic Evaluation of
-              High-Dimensional Trial-Level Surrogates Applied to
-              Vaccinology</em></p>
-              <p><a href="slides/communications/oral_communication_Bordeaux_2026.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
-              </div>
-              <div id="société-française-de-statistique---journées-de-statistique" class="section level3 entry">
-              <h3>Société Française de Statistique - Journées de
-              Statistique</h3>
-              <p><span class="meta">Marseille, France, June
-              2025</span></p>
-              <p><em>Rank-Based Identification of High-Dimensional
-              Surrogate Markers : Application to Vaccinology</em></p>
-              <p><a href="slides/communications/oral_communication_JDS_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
-              </div>
-              <div id="international-society-for-clinical-biostatistics-conference" class="section level3 entry">
-              <h3>International Society for Clinical Biostatistics
-              Conference</h3>
-              <p><span class="meta">Thessaloniki, Greece, July
-              2024</span></p>
-              <p><em>A variance-component score test for the comparison
-              of gene-set transcriptomic profiles of vaccines</em></p>
-              <p><a href="slides/communications/oral_communication_ISCB_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
-              </div>
-              <div id="rank-based-identification-of-surrogates-in-small-ebola-studies-workshop" class="section level3 entry">
-              <h3>Rank-Based Identification of Surrogates in Small Ebola
-              Studies workshop</h3>
-              <p><span class="meta">Austin, USA, June 2024</span></p>
-              <p><em>Evaluating High-dimensional Surrogate Markers of
-              Vaccine Response through Causal Mediation
-              Analysis</em></p>
-              <p><a href="slides/communications/oral_communication_Austin_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
-              </div>
-              </div>
-              <div id="poster-presentations" class="section level2">
-              <h2>Poster presentations</h2>
-              <div id="conférence-francophone-depidémiologie-clinique-epiclin-conference" class="section level3 entry">
-              <h3>Conférence Francophone d’Epidémiologie Clinique
-              (EPICLIN) Conference</h3>
-              <p><span class="meta">Bordeaux, France, May
-              2025</span></p>
-              <p><em>Rank-Based Identification of High-Dimensional
-              Surrogate Markers : Application to Vaccinology</em></p>
-              <p><a href="slides/communications/poster_commnuication_EPICLIN_2025.pdf" class="pill" target="_blank" rel="noopener noreferrer">Poster</a></p>
-              </div>
-              <div id="statistical-methods-for-post-genomic-data-smpgd-conference" class="section level3 entry">
-              <h3>Statistical Methods for Post-Genomic Data (SMPGD)
-              Conference</h3>
-              <p><span class="meta">Paris, France, January
-              2024</span></p>
-              <p><em>A test for the comparison of gene-set
-              transcriptomic profiles of vaccines</em></p>
-              <p><a href="slides/communications/poster_communication_SMPGD_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Poster</a></p>
-              </div>
-              <footer class="site-footer">
-              <p class="site-footer-name">
-              © 2026 Arthur Hughes
-              </p>
-              <p class="site-footer-links">
-              <a href="mailto:arthur.hughes@u-bordeaux.fr">Email</a>
-              <a href="https://orcid.org/0009-0001-5841-2580">ORCID</a>
-              <a href="https://github.com/arthurhughes27">GitHub</a>
-              <a href="https://scholar.google.com/citations?user=PSWWvJQAAAAJ&amp;hl=en">Google
-              Scholar</a>
-              <a href="https://www.linkedin.com/in/arthur-hughes-4a63a6243?originalSubdomain=fr">LinkedIn</a>
-              </p>
-              <p class="site-footer-meta">
-              Last updated 2026-10-22 · <a href="#">Back to top ↑</a>
-              </p>
-              </footer>
-              <script>
-              (function () {
-                var root = document.documentElement;
-                try { var saved = localStorage.getItem('theme'); if (saved) { root.setAttribute('data-theme', saved); } } catch (e) {}
-                function isDark() {
-                  var t = root.getAttribute('data-theme');
-                  return t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-                }
-                function init() {
-                  if (window.__themeInit) { return; }
-                  window.__themeInit = true;
-                  var links = document.querySelectorAll('.distill-site-header .nav-right a');
-                  var here = location.pathname.split('/').pop() || 'index.html';
-                  for (var i = 0; i < links.length; i++) {
-                    if (links[i].getAttribute('href') === here) { links[i].setAttribute('aria-current', 'page'); }
-                  }
-                  var nav = document.querySelector('.distill-site-header .nav-right');
-                  if (!nav) { return; }
-                  var btn = document.createElement('a');
-                  btn.href = 'javascript:void(0);';
-                  btn.className = 'theme-toggle';
-                  function paint() {
-                    btn.textContent = isDark() ? '☀' : '☾';
-                    var label = isDark() ? 'Switch to light theme' : 'Switch to dark theme';
-                    btn.setAttribute('aria-label', label);
-                    btn.setAttribute('title', label);
-                  }
-                  btn.addEventListener('click', function () {
-                    var next = isDark() ? 'light' : 'dark';
-                    root.classList.add('theme-fade');
-                    root.setAttribute('data-theme', next);
-                    try { localStorage.setItem('theme', next); } catch (e) {}
-                    paint();
-                    setTimeout(function () { root.classList.remove('theme-fade'); }, 400);
-                  });
-                  paint();
-                  nav.insertBefore(btn, nav.querySelector('.nav-toggle'));
-                }
-                if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
-              })();
-              </script>
-              </div>
+<div id="oral-presentations" class="section level2">
+<h2>Oral presentations</h2>
+<div id="international-biometric-conference" class="section level3 entry">
+<h3>International Biometric Conference</h3>
+<p><span class="meta">Seoul, South Korea, July 2026</span></p>
+<p><em>Evaluation of High-Dimensional Surrogate Markers with Applications to Vaccinology</em></p>
+<p><a href="slides/communications/oral_communication_IBC_Korea_2026.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
+</div>
+<div id="biostatistics-seminar-university-of-bordeaux" class="section level3 entry">
+<h3>Biostatistics Seminar, University of Bordeaux</h3>
+<p><span class="meta">Bordeaux, France, March 2026</span></p>
+<p><em>RISE-Meta: Meta-analytic Evaluation of High-Dimensional Trial-Level Surrogates Applied to Vaccinology</em></p>
+<p><a href="slides/communications/oral_communication_Bordeaux_2026.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
+</div>
+<div id="société-française-de-statistique-journées-de-statistique" class="section level3 entry">
+<h3>Société Française de Statistique – Journées de Statistique</h3>
+<p><span class="meta">Marseille, France, June 2025</span></p>
+<p><em>Rank-Based Identification of High-Dimensional Surrogate Markers: Application to Vaccinology</em></p>
+<p><a href="slides/communications/oral_communication_JDS_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
+</div>
+<div id="international-society-for-clinical-biostatistics-conference" class="section level3 entry">
+<h3>International Society for Clinical Biostatistics Conference</h3>
+<p><span class="meta">Thessaloniki, Greece, July 2024</span></p>
+<p><em>A variance-component score test for the comparison of gene-set transcriptomic profiles of vaccines</em></p>
+<p><a href="slides/communications/oral_communication_ISCB_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
+</div>
+<div id="rank-based-identification-of-surrogates-in-small-ebola-studies-workshop" class="section level3 entry">
+<h3>Rank-Based Identification of Surrogates in Small Ebola Studies Workshop</h3>
+<p><span class="meta">Austin, USA, June 2024</span></p>
+<p><em>Evaluating High-Dimensional Surrogate Markers of Vaccine Response through Causal Mediation Analysis</em></p>
+<p><a href="slides/communications/oral_communication_Austin_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Slides</a></p>
+</div>
+</div>
+<div id="poster-presentations" class="section level2">
+<h2>Poster presentations</h2>
+<div id="conférence-francophone-dépidémiologie-clinique-epiclin" class="section level3 entry">
+<h3>Conférence Francophone d’Épidémiologie Clinique (EPICLIN)</h3>
+<p><span class="meta">Bordeaux, France, May 2025</span></p>
+<p><em>Rank-Based Identification of High-Dimensional Surrogate Markers: Application to Vaccinology</em></p>
+<p><a href="slides/communications/poster_commnuication_EPICLIN_2025.pdf" class="pill" target="_blank" rel="noopener noreferrer">Poster</a></p>
+</div>
+<div id="statistical-methods-for-post-genomic-data-smpgd-conference" class="section level3 entry">
+<h3>Statistical Methods for Post-Genomic Data (SMPGD) Conference</h3>
+<p><span class="meta">Paris, France, January 2024</span></p>
+<p><em>A test for the comparison of gene-set transcriptomic profiles of vaccines</em></p>
+<p><a href="slides/communications/poster_communication_SMPGD_2024.pdf" class="pill" target="_blank" rel="noopener noreferrer">Poster</a></p>
+</div>
+<footer class="site-footer">
+<p class="site-footer-name">
+© 2026 Arthur Hughes
+</p>
+<p class="site-footer-links">
+<a href="mailto:arthur.hughes@u-bordeaux.fr">Email</a> <a href="https://orcid.org/0009-0001-5841-2580">ORCID</a> <a href="https://github.com/arthurhughes27">GitHub</a> <a href="https://scholar.google.com/citations?user=PSWWvJQAAAAJ&amp;hl=en">Google Scholar</a> <a href="https://www.linkedin.com/in/arthur-hughes-4a63a6243?originalSubdomain=fr">LinkedIn</a>
+</p>
+<p class="site-footer-meta">
+Last updated 2026-10-22 · <a href="#">Back to top ↑</a>
+</p>
+</footer>
+<script>
+(function () {
+  var root = document.documentElement;
+  try { var saved = localStorage.getItem('theme'); if (saved) { root.setAttribute('data-theme', saved); } } catch (e) {}
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    return t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function init() {
+    if (window.__themeInit) { return; }
+    window.__themeInit = true;
+    var links = document.querySelectorAll('.distill-site-header .nav-right a');
+    var here = location.pathname.split('/').pop() || 'index.html';
+    for (var i = 0; i < links.length; i++) {
+      if (links[i].getAttribute('href') === here) { links[i].setAttribute('aria-current', 'page'); }
+    }
+    var nav = document.querySelector('.distill-site-header .nav-right');
+    if (!nav) { return; }
+    var btn = document.createElement('a');
+    btn.href = 'javascript:void(0);';
+    btn.className = 'theme-toggle';
+    function paint() {
+      btn.textContent = isDark() ? '☀' : '☾';
+      var label = isDark() ? 'Switch to light theme' : 'Switch to dark theme';
+      btn.setAttribute('aria-label', label);
+      btn.setAttribute('title', label);
+    }
+    btn.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.classList.add('theme-fade');
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      paint();
+      setTimeout(function () { root.classList.remove('theme-fade'); }, 400);
+    });
+    paint();
+    nav.insertBefore(btn, nav.querySelector('.nav-toggle'));
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
+})();
+</script>
+</div>
             </div>
         </div>
       </div>
