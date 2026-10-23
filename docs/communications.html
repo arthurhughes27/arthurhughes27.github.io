@@ -456,6 +456,7 @@ color-scheme: light dark;
 --accent: #1d4e89; 
 --link-hover: #14213d;
 --accent-2: #d98e04; 
+--active: #2e7d32;
 --muted: #4f5b73;
 --card-bg: rgba(255,255,255,0.6);
 --card-border: rgba(20,33,61,0.12);
@@ -474,6 +475,7 @@ color-scheme: light dark;
 --accent: light-dark(#1d4e89, #8fb8f0);
 --link-hover: light-dark(#14213d, #f0b429);
 --accent-2: light-dark(#d98e04, #f0b429);
+--active: light-dark(#2e7d32, #6fcf8a);
 --muted: light-dark(#4f5b73, #9aa6bd);
 --card-bg: light-dark(rgba(255,255,255,0.6), rgba(255,255,255,0.05));
 --card-border: light-dark(rgba(20,33,61,0.12), rgba(255,255,255,0.12));
@@ -638,6 +640,7 @@ h4 { font-size: 1.05rem; font-weight: 700; margin-top: 1.25rem; margin-bottom: 0
             padding: 1.1rem 1.4rem 0.9rem;
             margin: 0 0 1.25rem;
           }
+.entry.active { border-left-color: var(--active); }
           .entry > h2, .entry > h3, .entry > h4 { margin-top: 0; font-size: 1.05rem; }
           .entry .meta { display: block; margin-bottom: 0.75rem; color: var(--muted); font-family: var(--font-mono); font-size: 0.85rem; }
 

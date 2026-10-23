@@ -8,7 +8,17 @@ output:
  
 ## Current Offers
 
-I have no current internship offers. Any new offers will appear here. If you are interested in working on similar topics, you are welcome to get in touch:
+:::: {.entry .active}
+#### Development of nonparametric methods for the evaluation of surrogate markers in the non-continuous data setting
+
+[Current offer]{.meta}
+
+<!-- Description: to be written -->
+
+[View internship offer](internships/internship_2027.pdf){.pill target="_blank" rel="noopener noreferrer"}
+::::
+
+Any new offers will appear here. If you are interested in working on similar topics, you are welcome to get in touch:
 
 - Email: [arthur.hughes@u-bordeaux.fr](mailto:arthur.hughes@u-bordeaux.fr)
 
