@@ -11,6 +11,9 @@ output:
 :::: {.entry .active}
 #### Development of nonparametric methods for the evaluation of surrogate markers in the non-continuous data setting
 
+
+**Description:** 4-6 month internship for a Master student. This project concerns the extension of non-parametric, rank-based approaches for surrogate marker evaluation, in the case where either the surrogate candidate, or the clinical endpoint (or both) are not of a continuous data type (for example, binary, ordinal, or time-to-event data).
+
 [Current offer]{.meta}
 
 <!-- Description: to be written -->
@@ -18,9 +21,9 @@ output:
 [View internship offer](internships/internship_2027.pdf){.pill target="_blank" rel="noopener noreferrer"}
 ::::
 
-Any new offers will appear here. If you are interested in working on similar topics, you are welcome to get in touch:
+<!-- Any new offers will appear here. If you are interested in applying for this internship, please get in touch: -->
 
-- Email: [arthur.hughes@u-bordeaux.fr](mailto:arthur.hughes@u-bordeaux.fr)
+<!-- - Email: [arthur.hughes@u-bordeaux.fr](mailto:arthur.hughes@u-bordeaux.fr) -->
 
 ## Past Offers
 

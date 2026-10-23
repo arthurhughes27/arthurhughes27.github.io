@@ -1978,6 +1978,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --accent: #1d4e89;            /* links: 7.5:1 on --paper */
     --link-hover: #14213d;
     --accent-2: #d98e04;          /* amber: decorative only (bars, stripes, underlines) */
+    --active: #2e7d32;            /* green stripe on an active (current) offer */
     --muted: #4f5b73;
     --card-bg: rgba(255,255,255,0.6);
     --card-border: rgba(20,33,61,0.12);
@@ -1996,6 +1997,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       --accent: light-dark(#1d4e89, #8fb8f0);
       --link-hover: light-dark(#14213d, #f0b429);
       --accent-2: light-dark(#d98e04, #f0b429);
+      --active: light-dark(#2e7d32, #6fcf8a);
       --muted: light-dark(#4f5b73, #9aa6bd);
       --card-bg: light-dark(rgba(255,255,255,0.6), rgba(255,255,255,0.05));
       --card-border: light-dark(rgba(20,33,61,0.12), rgba(255,255,255,0.12));
@@ -2168,6 +2170,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding: 1.1rem 1.4rem 0.9rem;
     margin: 0 0 1.25rem;
   }
+  .entry.active { border-left-color: var(--active); }   /* current internship offer */
   .entry > h2, .entry > h3, .entry > h4 { margin-top: 0; font-size: 1.05rem; }
   .entry .meta { display: block; margin-bottom: 0.75rem; color: var(--muted); font-family: var(--font-mono); font-size: 0.85rem; }
 
