@@ -22,8 +22,3 @@ and [postcards](https://github.com/seankross/postcards), and is hosted on GitHub
 
 Open `distill-postcards-arthur-hughes.Rproj` in RStudio and choose **Build > Build Website**
 (or run `rmarkdown::render_site()`). The result is written to `docs/`, which GitHub Pages serves.
-
-## Note on file names
-
-GitHub Pages is case-sensitive, while macOS and Windows are not, so a link to `Slides.pdf` for a file
-called `slides.pdf` works locally but breaks online. `Rscript scripts/check_links.R` finds such links.
