@@ -61,6 +61,16 @@ output:
 ## Poster presentations
 
 :::: {.entry}
+### Statistical Methods for Post-Genomic Data (SMPGD) Conference
+
+[Grenoble, France, 2026]{.meta}
+
+*Investigator Choices Influence Biological Interpretation of Transcriptomic Signatures of Vaccination*
+
+[Poster](slides/communications/poster_communication_SMPGD_2026.pdf){.pill target="_blank" rel="noopener noreferrer"}
+::::
+
+:::: {.entry}
 ### Conférence Francophone d'Épidémiologie Clinique (EPICLIN)
 
 [Bordeaux, France, May 2025]{.meta}
