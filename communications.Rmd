@@ -9,6 +9,16 @@ output:
 ## Oral presentations
 
 :::: {.entry}
+### PhD Thesis Defence
+
+[Bordeaux, France, November 2026]{.meta}
+
+*Transcriptomic Signatures for Vaccine Development: Association, Prediction, and Surrogacy*
+
+[Slides](slides/communications/thesis_defence_presentation.pdf){.pill target="_blank" rel="noopener noreferrer"}
+::::
+
+:::: {.entry}
 ### International Biometric Conference
 
 [Seoul, South Korea, July 2026]{.meta}
